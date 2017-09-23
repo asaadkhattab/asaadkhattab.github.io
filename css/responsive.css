@@ -1,0 +1,48 @@
+@media (min-width: 700px) {
+
+  .navbar ul ,
+  .textlogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+
+  .container {
+    bottom: 0;
+    height: 200px;
+
+    display: block;
+    justify-content: space-around;
+  }
+
+  #pages {
+    padding-top: 0;
+
+  }
+
+}
+
+
+@media (min-width: 1000px) {
+
+
+.textlogo {
+  margin: 0 15px;
+
+}
+
+
+.container {
+  bottom: 0;
+  height: 100px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+
+
+}
