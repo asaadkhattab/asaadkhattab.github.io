@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <title>Asaad Khattab</title>
       <meta charset="utf-8">
@@ -10,83 +10,163 @@
       <meta name="robots" content="index, follow">
       <meta name="language" content="English" />
 
-      <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="css/responsive.css">
-
+      <link rel="stylesheet" href="css/import.css">
       <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   </head>
 
+  <!-- Script within the Head element for smoother page scrolling when a user clicks on the nav -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    </script>
+<!-- Body -->
   <body>
-    <!--Main Header and Naviation -->
-    <div class= "wrapper">
-      <header class="mainheader">
-        <div class="container">
-          <h1 class="textlogo"><a href="index.html">Asaad Khattab</a></h1>
-            <nav class="navbar">
-              <ul>
-                <li><a href="index.html#welcomepage">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#aboutme">About</a></li>
-                <li><a href="#contactme">Contact</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
+
+    <!--Main Header and Navigation -->
+      <div class= "wrapper">
+        <header class="mainheader">
+          <div class="container">
+            <h1 class="textlogo"><a href="index.html">Asaad Khattab</a></h1>
+              <nav class="navbar">
+                <ul>
+                  <li><a href="#welcomePage">Home</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#resume">Resume</a></li>
+                  <li><a href="#aboutMe">About</a></li>
+                  <li><a href="#contactMe">Contact</a></li>
+                </ul>
+              </nav>
             </div> <!-- End div class="container" -->
-          </nav>
-      </header>
+         </header>
 
-<!-- Section -->
-    <section>
-      <div id="pages">
-      <div id="welcomepage">
-        <h1 class="welcometext"><em>Hey</em>!</br>Thank you for stopping by.</br> I am a Junior Front-End Web Developer in Louisville...</h1>
-        <img src="images/profilepic.jpg" alt="Picture of Asaad Khattab" class="profilepic">
-        <ul class="projectsflex">
-        </ul>
-      </div> <!--End div projecticons -->
+<!-- SECTIONS - PAGES-->
 
+            <div id="welcomePage">
+              <h1 class="welcometext"><em>Hey</em>!</br>Thank you for stopping by.</br> I am a Junior Front-End Web Developer in Louisville...</h1>
+              <img src="images/profilepic.jpg" alt="Picture of Asaad Khattab" class="profilepic">
+              <ul class="projectsflex">
+              </ul>
+            </div> <!-- End div welcomePage -->
 
-      <div id="projects">
-        <p class="subheading"> Projects I've worked on</p>
-          <ul class="projectsflex">
-            <li><a href="#"><img src="images/html.png" alt="Html Logo" class="projectlogo"></a></li>
-            <li><a href="#"><img src="images/css.png" alt="Css Logo" class="projectlogo"></a></li>
-            <li><a href="#"><img src="images/js.png" alt="JavaScript Logo" class="projectlogo"></a></li>
-            <li><a href="#"><img src="images/jq.png" alt="jQuery Logo" class="projectlogo"></a></li>
-          </ul>
-      </div> <!--End div projecticons -->
+<!-- PROJECTS -->
+            <div id="projects">
+              <p class="subheading">Find me online</p>
+              <ul class="projectsflex">
+                <li><a href="http://www.github.com/asaadkhattab" target="_blank"><img src="images/githubtransparent.png" title="My GitHub" alt="GitHub Logo" class="findMeOnline"></a></li>
+                <li><a href="http://www.teamtreehouse.com/asaadkhattab" target="_blank"><img src="images/treehousetransparent.png" title="My TeamTreeHouse Profile" alt="Team Tree House Logo" class="findMeOnline"></a></li>
+                <li><a href="http://www.crispywebsite.com" target="_blank"><img src="images/chicken.png" alt="Crispy Website Logo"  title="CrispyWebsite" class="findMeOnline"></a></li>
+              </ul>
+            </div> <!--End div projects-->
 
-      <div id="resume">
-        <p class="subheading">Resume</p>
+<!-- FINDMEONLINE -->
+            <div id="findMe">
+              <p class="subheading"> Some of the Languages I practice</p>
+                <ul class="projectsflex">
+                  <li><img src="images/html.png" alt="Html Logo" title="HTML5"class="projectlogo"></li>
+                  <li><img src="images/css.png" alt="Css Logo" title="CSS3"class="projectlogo"></li>
+                  <li><img src="images/js.png" alt="JavaScript Logo" title="JavaScript" class="projectlogo"></li>
+                  <li><img src="images/jq.png" alt="jQuery Logo" title="jQuery" class="projectlogo"></li>
+                </ul>
+            </div> <!--End div projecticons -->
 
-      </div> <!--End div resume-->
+<!-- RESUME -->
+            <div id="resume">
+            <p class="subheading">Resume</p>
+              <form target="_blank" action="resumepdf.pdf" method="get">
+                <button class="callToActionButton">
+                  Click Here to Download my Full Resume
+                </button>
+              </form>
+              <div class="grid">
+                <div class="columnOneGrid">
+                  <ul>
+                    <li><h1>Work Experience:</h1></li>
+                  <ul>
+                </div>
+                <div class="columnTwoGrid">
+                  <ul>
+                    <li>
+                      <h2 class="dateGrid">2017 - Present</h2>
+                      <h4>CrispyWebsite</h4>
+                      <h5>Front-End Web Developer</h5>
+                      <p>Build and maintain websites</p>
+                    </li>
+                    <li>
+                      <h2 class="dateGrid">January 2017 - April 2017</h2>
+                      <h4>CVS</h4>
+                      <h5>Pharmacy Technician</h5>
+                      <p>Collaborate with Pharmacist to ensure our customers receive quality care.
+                         Sort pills, create labels, answer phones, and ring up purchases at the register
+                         or drive-thru.
+                      </p>
+                    </li>
+                  </ul>
+                </div> <!-- end columnTwoGrid -->
+                <div class="columnOneGrid">
+                    <ul>
+                      <li><h1>Education:</h1></li>
+                    <ul>
+                </div> <!-- End div educationColumnOneGrid -->
+                <div class="columnTwoGrid">
+                  <ul>
+                    <li>
+                      <h2 class="dateGrid">2017</h2>
+                      <h4>CodeLouisville</h4>
+                      <p>Front End Web Development Certificate - Pending</p>
+                    </li>
+                    <li>
+                      <h2 class="dateGrid">2015</h2>
+                      <h4>Eastern Kentucky University</h4>
+                      <p>Bachelor of Science in Biology</p>
+                    </li>
+                    <li>
+                      <h2 class="dateGrid">2013</h2>
+                      <h4>Big Sandy Community and Technical College</h4>
+                      <p>Associate in Science - 2011</p>
+                      <p>Associate in Art
+                    </li>
+                  </ul>
+                </div> <!-- end columnTwoGrid -->
+              </div> <!-- End div grid -->
+            </div> <!--End div resume-->
 
-        <p class="subheading">About Me</p>
-      <div id="aboutme">
+<!-- ABOUT ME -->
+            <div id="aboutMe">
+              <p class="subheading">About Me</p>
+              <div class="aboutMeFlexbox">
+                <div class="aboutMeText">Greetings everyone! On July 2017, I was fortunate to get accepted to CodeLouisville's Front-End Web Development program.
+                In 2015, I recieved my Bachelor of Science degree in Biology from EKU. In addition, I have two Associate Degrees - Art and Science - from Big Sandy College
+                Community and Technical College. I studied pharmacy abroad for one year in Syria during 2010. I was introduced to web design by my dad's friend back in 2004 when I was 11 years old.
+                He showed me how to create a basic website using Microsoft FrontPage. The first HTML element I used was <code>&lt;marquee&gt;</code>. He also showed me how to host it to Angelfire.
+                I thought that was the coolest thing ever!
+                </div>
+                <div class="aboutMePhoto"><img class="aboutMePhoto" src="images/asaad.jpg" alt="another photo of me"></div>
+              </div> <!--End div aboutMeFlexbox -->
+            </div> <!--End div aboutme -->
 
-          <div class="aboutMeText">Greetings. In 2017, I was accepted by CodeLouisville's Front-End Web Development Track. I have
-            a Bachelor of Science in Biology from EKU and two Associate Degrees - Art and Science - from Big Sandy College.
-            I was introduced to web design by my dad's friend back in 2004 when I was 11 years old. He showed me how to create a
-            basic website using Microsoft FrontPage, how to add the < marquee> tag in it, and how link it to Angelfire.
-            I thought it was the coolest thing ever!
-          </div>
-          <div class="aboutMePhoto"><img class="aboutMePhoto" src="images/asaad.jpg" alt="another photo of me"></div>
-        </div>
+<!-- CONTACT ME -->
+            <div id="contactMe">
+              <p class="subheading">Contact Me</p>
+              <div class="contactCard">
+                <h3>Contact Info:</h3>
+                <p><a href="tel:6063396390">&phone;: (606) 339-6390</a></p>
+                <p><a href="mailto:asaad1592@gmail.com">Email: asaad1592@gmail.com</a></p>
+              </div> <!-- End div contactCard -->
+            </div> <!--End div contactMe -->
 
-      </div> <!--End div aboutme -->
-
-      <div id="contactme">
-        <p class="subheading">Contact Me</p>
-
-      </div> <!--End div aboutme -->
-
-    <div> <!-- End Div pages -->
-
-    </section>
-
-  </div> <!-- End div class="wrapper" -->
-
+        </div> <!-- End div wrapper -->
     <footer>
       <p>&copy; 2017 Developed by <a href="http://www.crispywebsite.com" target="_blank">CrispyWebsite<a></p>
     </footer>

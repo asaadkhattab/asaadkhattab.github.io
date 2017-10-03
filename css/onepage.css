@@ -1,0 +1,58 @@
+/*******************************************************************************
+PAGES ID ANCHORS
+My Portfolio is a Single Page Website.
+This Css is for the sections that are linked to the anchor ids on the index.html
+*******************************************************************************/
+
+
+#welcomePage {
+  background-color: #6ab47b;
+  overflow: hidden;
+}
+
+#findMe {
+  background-color: #800000;
+}
+
+#projects {
+  background-color: #008080;
+}
+
+#resume {
+  background-color: #474e5d;
+}
+
+#aboutMe {
+  background: blue;
+
+}
+
+#contactMe {
+  background: orange;
+  padding-bottom: 10px;
+}
+
+/*******************************************************************************
+MEDIA QUERIES
+*******************************************************************************/
+
+@media (min-width:600px) {
+
+  #welcomePage {
+    padding-top: 100px;
+    height: calc(100vh - 200px);
+  }
+
+  #contactMe {
+  padding-bottom: 150px;
+
+  }
+}
+
+@media (min-width: 1280px) {
+
+  #welcomePage {
+    padding-top: 200px;
+    height: calc(100vh - 100px);
+  }
+}

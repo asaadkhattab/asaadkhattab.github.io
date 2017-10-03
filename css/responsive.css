@@ -1,48 +1,74 @@
-@media (min-width: 700px) {
+/*******************************************************************************
+MEDIA QUERIES
+*******************************************************************************/
+@media (min-width: 600px) {
 
-  .navbar ul ,
+  /*******************************************************************************
+  LOGOS AND NAVIGATION
+  *******************************************************************************/
+  .navbar ul,
   .textlogo {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
   }
 
   .container {
     bottom: 0;
     height: 200px;
+    position: fixed;
+  }
 
-    display: block;
+  /*******************************************************************************
+  PROFILE PICTURE
+  *******************************************************************************/
+
+  .profilepic {
+    margin: 100px auto;
+    transition: all .20s;
+  }
+
+  .profilepic:hover {
+      transform: scale(2) rotate(10deg);
+  }
+
+  /*******************************************************************************
+  ABOUT ME
+  *******************************************************************************/
+  .aboutMeFlexbox {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutMeText {
+    font-size: 20px;
+    flex-grow: 1;
+    border-radius: 0px;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .aboutMePhoto {
+    border-radius: 0px;
+  }
+
+}
+
+@media (min-width: 1280px) {
+
+  .navbar {
+    flex-direction: row;
+  }
+
+  .textlogo {
+    margin: 0 15px;
+  }
+
+  .container {
+    bottom: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
   }
-
-  #pages {
-    padding-top: 0;
-
-  }
-
-}
-
-
-@media (min-width: 1000px) {
-
-
-.textlogo {
-  margin: 0 15px;
-
-}
-
-
-.container {
-  bottom: 0;
-  height: 100px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-}
-
-
-
 }
