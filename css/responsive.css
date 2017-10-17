@@ -1,46 +1,52 @@
 /*******************************************************************************
 MEDIA QUERIES
 *******************************************************************************/
-@media (min-width: 600px) {
 
+
+/* 480px: For The Landscape Display in phones */
+@media (min-width: 642px) {
   /*******************************************************************************
   LOGOS AND NAVIGATION
   *******************************************************************************/
-  .navbar ul,
-  .textlogo {
-    display: flex;
+
+  .main-header{
+    display: block;
     flex-direction: row;
-    justify-content: space-around;
+    height: 150px;
+    padding: 10px;
   }
 
-  .container {
-    bottom: 0;
-    height: 200px;
-    position: fixed;
+  .text-logo {
+    margin: 5px;
+  }
+
+  .navbar ul {
+    display: flex;
+    justify-content: center;
   }
 
   /*******************************************************************************
   PROFILE PICTURE
   *******************************************************************************/
 
-  .profilepic {
+  .profile-pic {
     margin: 100px auto;
     transition: all .20s;
   }
 
-  .profilepic:hover {
-      transform: scale(2) rotate(10deg);
+  .profile-pic:hover {
+    transform: scale(2) rotate(10deg);
   }
 
   /*******************************************************************************
   ABOUT ME
   *******************************************************************************/
-  .aboutMeFlexbox {
+  .about-me-flexbox {
     display: flex;
     justify-content: center;
   }
 
-  .aboutMeText {
+  .about-me-text {
     font-size: 20px;
     flex-grow: 1;
     border-radius: 0px;
@@ -48,27 +54,36 @@ MEDIA QUERIES
     padding: 20px;
   }
 
-  .aboutMePhoto {
+  .about-me-photo {
     border-radius: 0px;
+  }
+}
+
+/* 600px: For The Tablet Display */
+@media (min-width: 800px) {
+  .main-header{
+    flex-direction: row;
+    bottom: 0;
+    position: fixed;
+    padding: 5px;
   }
 
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
 
-  .navbar {
-    flex-direction: row;
+  .text-logo {
+    margin: 10px auto 10px 100px;
   }
 
-  .textlogo {
-    margin: 0 15px;
-  }
-
-  .container {
+  .main-header {
     bottom: 0;
     height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+  }
+
+  .navbar ul {
+    margin: 5px 100px 5px auto;
   }
 }

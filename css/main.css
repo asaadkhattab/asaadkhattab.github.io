@@ -5,39 +5,56 @@ MAIN
 
 * {
   box-sizing: border-box;
-}
-
-a {
   text-decoration: none;
 }
 
-:visited {
- color: #fff;
+/*******************************************************************************
+jQuery
+*******************************************************************************/
+/* div change background color for welcome page */
+
+.button-color li {
+	display: inline-block;
+  align-content: center;
+	height: 30px;
+	width: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+	box-shadow: 0 2px 0 0 #554;
+}
+
+.background-color-selected {
+	border: 2px solid #fff;
 }
 
 /*******************************************************************************
 HEADERs--- IN ORDER
 *******************************************************************************/
+select {
+  width: 200px;
+  background-color: yellow;
+  color: green;
+}
 
-.container {
+.main-header {
   width: 100%;
-  background-color: #eee;
-  padding: 1em;
-  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('../nature.jpeg');
   overflow: hidden;
-  z-index: 10000;
+  display: block;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 99;
 }
 
+/*The pages headline on the navbar*/
 .subheading {
   text-transform: uppercase;
   font-size: 25px;
   text-align: center;
-  color: #fff;
   padding: 30px;
-  background-color: #52bab3;
   width: 100%;
   margin: auto;
 }
@@ -47,65 +64,46 @@ HEADERs--- IN ORDER
 NAVIGATION
 *******************************************************************************/
 
-.textlogo,
-.navbar ul {
-  display: block;
-  text-align: center;
-}
-
-.navbar,
 .navbar li {
-  padding: 10px;
-  border: transparent;
+  padding: .4em;
 }
 
 .navbar a {
   text-transform: uppercase;
-  color: green;
-  padding: 10px 15px;
-  font-size: 20px;
-  color: #fff;
+  display: block;
+  font-size: 1.2em;
+  padding: 1em;
+  border: 2px solid transparent;
 }
 
-.navbar li:hover {
+.navbar a:hover {
   border: 2px solid #fff;
+  border-radius: 5px;
 }
 
-.navbar li:active {
-  background-color: #fff;
-}
-
-.navbar a:active {
-  color: #000;
-}
 
 /*******************************************************************************
 LOGOS
 *******************************************************************************/
 
-.textlogo {
+.text-logo {
   font-family: 'Pacifico', cursive;
   font-size: 3em;
 }
 
-.textlogo a:visited {
-  color: white;
-}
-
-.welcometext {
+.welcome-text {
   display: block;
   font-size: 50px;
   color: #fff;
   text-align: center;
-  margin-top: 0;
 }
 
-.profilepic {
+.profile-pic {
   border-radius: 100%;
   max-width: 150px;
   display: block;
   margin: auto;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   border: 5px solid white;
 }
 
@@ -114,7 +112,7 @@ SECTIONS
 *******************************************************************************/
 /**************************** Projects ****************************************/
 
-.findMeOnline  {
+.find-me-online  {
   width: 100px;
   height: 100px;
   margin: 40px 10px;
@@ -123,7 +121,7 @@ SECTIONS
   border-radius: 10px;
 }
 
-.projectsflex {
+.projects-flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -132,13 +130,10 @@ SECTIONS
 
 }
 
-.projectlogo  {
+.project-logo  {
   width: 200px;
   height: 250px;
   margin: 50px 10px;
-
-  background-color: #eee;
-
   padding: 50px 25px;
   border-radius: 10px;
 }
@@ -147,25 +142,21 @@ SECTIONS
 ABOUT
 *******************************************************************************/
 
-.aboutMeText {
-  color: #000;
-  background-color: #fff;
+.about-me-text {
   font-size: 1em;
   width: 350px;
-
   padding: 25px;
   border-bottom: 3px solid #eee;
-
   border-radius: 10px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
 
-.aboutMeText:hover {
+.about-me-text:hover {
   border-bottom: 5px solid orange;
 }
 
-.aboutMePhoto {
+.about-me-photo {
   border-radius: 12px;
   width: 350px;
   height: 400px;
@@ -178,16 +169,19 @@ ABOUT
 RESUME
 *******************************************************************************/
 
-.callToActionButton {
+h4 {
+  text-decoration: underline;
+}
+
+.call-to-action-button {
   width: 50%;
   display: block;
   padding: 20px 10px;
   margin: 10px auto;
   font: 20px;
-  color: #fff;
   border-radius: 10px;
-  background-color: #800000;
 }
+
 .grid {
   max-width: 850px;
   margin: 0 auto;
@@ -200,51 +194,39 @@ RESUME
 
 }
 
-.columnOneGrid {
-  background-color: #eee;
+.column-one-grid {
   padding: 10px;
-
 }
-.columnTwoGrid {
-  background-color: #fff;
+
+.column-two-grid {
   padding: 10px;
-
 }
-
-.dateGrid {
-  color: #800000;
-}
-
 
 /*******************************************************************************
 CONTACT US
 *******************************************************************************/
-.contactCard {
+.contact-card {
   width: 300px;
   height: 170px;
   margin: 20px auto;
   display: block;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  background-color: #eee;
   transition: 0.3s;
   padding: 20px 50px;
   border-radius: 10px;
   overflow-y: visible;
 }
 
-.contactCard:hover {
+.contact-card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+
 /*******************************************************************************
 FOOTER
 *******************************************************************************/
 footer {
-
-
   text-align: center;
   font-size: 20px;
-  color: #fff;
-  background-color: #000;
-
-
+  margin-top: 0px;
+  padding: 20px;
 }
