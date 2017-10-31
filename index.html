@@ -10,15 +10,13 @@
       <meta name="description" content="My name is Asaad Khattab and I'm a freelancer looking for a job.
       Web Development is what makes me stay up late, forget to eat, and wake up early.">
       <meta name="keywords" content="asaad, khattab, web, developer, louisville, kentucky">
-
-      <link rel="stylesheet" href="js/slick/slick.css">
-      <link rel="stylesheet" href="js/slick/slick-theme.css">
+      <!--CSS-->
       <link rel="stylesheet" href="css/import.css">
       <link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+SC" rel="stylesheet">
   </head>
 
-  <body>
-    <div class= "wrapper">
+  <body class="animsition">
+    <div class="wrapper">
       <!--Main Header and Navigation -->
       <header class="main-header">
         <h1 class="text-logo">
@@ -26,19 +24,21 @@
         </h1>
         <nav>
           <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" class="animsition-link">Home</a></li>
+            <li><a href="resume.html" class="animsition-link">Resume</a></li>
+            <li><a href="about.html" class="animsition-link">About</a></li>
+            <li><a href="contact.html" class="animsition-link">Contact</a></li>
           </ul>
         </nav>
       </header>
 
       <!-- Carousel -->
       <div class="carousel">
-        <div class="slide info-color-dark">
+        <!-- First Slide -->
+        <div class="slide info-color">
           <div class="grid-half">
             <h1 class="welcome-text">
+            <p class="carousel-span">
             <script>
               var day = new Date().getHours();
               if ( day < 12 ){ document.write("Good morning");}
@@ -46,13 +46,15 @@
               { document.write("Good afternoon"); }
               else { document.write("Good evening"); }
             </script>,
-            everyone!</br>Thank you for stopping by.</br> I am a Front-End Web Developer...</h1>
+            everyone!</br> I'm a Front-End Web Developer...</h1>
+          </p>
           </div>
           <div class="grid-half">
               <img src="images/profilepic.jpg" alt="Picture of Asaad Khattab" class="profile-pic">
           </div>
         </div>
-        <div class="slide info-color-dark">
+        <!-- Second Slide -->
+        <div class="slide success-color">
           <div class="grid-half">
             <h1 class="welcome-text">I'm on the Following Social Media</h1>
           </div>
@@ -60,19 +62,41 @@
             <li>Facebook</li>
           </div>
         </div>
+
+        <!-- Third Slide -->
+        <div class="slide warning-color-dark ">
+          <div class="grid-half">
+            <h1 class="welcome-text">I'm on the Following Social Media</h1>
+          </div>
+          <div class="grid-half">
+            <li>Facebook</li>
+          </div>
+        </div>
+
+        <!-- Fourth Slide -->
+        <div class="slide secondary-color-dark ">
+          <div class="grid-half">
+            <h1 class="welcome-text">I'm on the Following Social Media</h1>
+          </div>
+          <div class="grid-half">
+            <li>Facebook</li>
+          </div>
+        </div>
+
       </div> <!-- End Carousel -->
 
       </div> <!-- End div wrapper -->
     <footer>
       <p>&copy; 2017 Developed by <a href="http://www.crispywebsite.com" target="_blank">CrispyWebsite<a></p>
     </footer>
-      <script src="https://code.jquery.com/jquery-3.2.1.js"
-      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-      crossorigin="anonymous"></script>
-      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <!--Javascript and jQuery-->
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-      <script type="text/javascript" src="jquery/jquery.js"></script>
-      <script type="text/javascript" src="js/javascript.js"></script>
       <script type="text/javascript" src="js/slick/slick.min.js"></script>
+      <script type="text/javascript" src="js/animsition/animsition.min.js"></script>
+      <script type="text/javascript" src="js/javascript.js"></script>
+      <script type="text/javascript" src="jquery/jquery.js"></script>
+
   </body>
 </html>
