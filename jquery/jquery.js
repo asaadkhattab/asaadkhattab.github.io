@@ -1,21 +1,16 @@
-/* JQuery */
-
-/* Mobile Menu */
-
-
-/*******************************************************************************
-Background Change on Welcome div
-*******************************************************************************/
-/* Change the colors */
-$(".button-color").on("click", "li", function (){
-  $(this).siblings().removeClass("background-color-selected");
-  $(this).addClass("background-color-selected");
-  color = $(this).css("background-color");
-
+/* Menu options for Mobile */
+var $select = $("<select></select>");
+$(".navigation").append($select);
+$(".navigation a").each(function(){
+  var $anchor = $(this);
+  var $option = $("<option></option>");
+  if($anchor.parent().hasClass("selected")) {
+    $option.prop("selected", true);
+  }
+  $option.val($anchor.attr("href"));
+  $option.text($anchor.text());
+  $select.append($option);
 });
-
-const myHeading = document.getElementById('#welcome-page');
-
-myHeading.addEventListener('click', () => {
-  myHeading.style.color= 'red';
+  $select.change(function(){
+  window.location = $select.val();
 });

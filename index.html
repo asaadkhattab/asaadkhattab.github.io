@@ -1,208 +1,78 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Asaad Khattab</title>
+    <title>Asaad Khattab | Freelance Web Developer - Louisville, Kentucky</title>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="author" content="Asaad Khattab">
-      <meta name="description" content="Greetings... Welcome to my Personal Webpage">
-      <meta name="keywords" content="asaad, khattab, web, developer, louisville">
       <meta name="robots" content="index, follow">
       <meta name="language" content="English" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="My name is Asaad Khattab and I'm a freelancer looking for a job.
+      Web Development is what makes me stay up late, forget to eat, and wake up early.">
+      <meta name="keywords" content="asaad, khattab, web, developer, louisville, kentucky">
+
+      <link rel="stylesheet" href="js/slick/slick.css">
+      <link rel="stylesheet" href="js/slick/slick-theme.css">
       <link rel="stylesheet" href="css/import.css">
-      <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+SC" rel="stylesheet">
   </head>
 
-  <!-- Script within the Head element for smoother page scrolling when a user clicks on the nav -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-      $("a").on('click', function(event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 900, function(){
-            window.location.hash = hash;
-          });
-        }
-      });
-    });
-    </script>
-<!-- Body -->
   <body>
     <div class= "wrapper">
       <!--Main Header and Navigation -->
       <header class="main-header">
-        <h1 class="text-logo"><a href="index.html">Asaad Khattab</a></h1>
-        <nav class="navbar">
-          <ul>
-            <li><a href="#welcome-page">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <h1 class="text-logo">
+          <a href="index.html">Asaad Khattab</a>
+        </h1>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
 
-<!-- SECTIONS - PAGES-->
-
-      <div id="welcome-page">
-        <div class="button-color">
-          <ul>
-            <li class="danger-color"></li>
-            <li class="warning-color"></li>
-            <li class="default-color background-color-selected"></li>
-            <li class="secondary-color"></li>
-            <li class="info-color"></li>
+      <!-- Carousel -->
+      <div class="carousel">
+        <div class="slide info-color-dark">
+          <div class="grid-half">
+            <h1 class="welcome-text">
+            <script>
+              var day = new Date().getHours();
+              if ( day < 12 ){ document.write("Good morning");}
+              else if ( day >= 12 && day <= 17 )
+              { document.write("Good afternoon"); }
+              else { document.write("Good evening"); }
+            </script>,
+            everyone!</br>Thank you for stopping by.</br> I am a Front-End Web Developer...</h1>
+          </div>
+          <div class="grid-half">
+              <img src="images/profilepic.jpg" alt="Picture of Asaad Khattab" class="profile-pic">
+          </div>
         </div>
-        <h1 class="welcome-text">
-        <!--Greetings -->
-        <script>
-          var day = new Date().getHours();
+        <div class="slide info-color-dark">
+          <div class="grid-half">
+            <h1 class="welcome-text">I'm on the Following Social Media</h1>
+          </div>
+          <div class="grid-half">
+            <li>Facebook</li>
+          </div>
+        </div>
+      </div> <!-- End Carousel -->
 
-          if ( day < 12 )
-          {
-              document.write("Good morning");
-          }
-
-          else if ( day >= 12 && day <= 17 )
-          {
-              document.write("Good afternoon");
-          }
-
-          else
-          {
-              document.write("Good evening");
-          }
-        </script>,
-         everyone!</br>Thank you for stopping by.</br> I am a Front-End Web Developer...</h1>
-        <img src="images/profilepic.jpg" alt="Picture of Asaad Khattab" class="profile-pic">
-        <ul class="projects-flex">
-        </ul>
-      </div> <!-- End div welcomePage -->
-
-<!-- PROJECTS -->
-            <div id="projects">
-              <p class="subheading">Find me online</p>
-              <ul class="projects-flex">
-                <li>
-                  <a href="http://www.github.com/asaadkhattab" target="_blank"><img src="images/githubtransparent.png"
-                     title="My GitHub" alt="GitHub Logo" class="find-me-online"></a></li>
-                <li>
-                  <a href="http://www.teamtreehouse.com/asaadkhattab" target="_blank"><img src="images/treehousetransparent.png"
-                     title="My TeamTreeHouse Profile" alt="Team Tree House Logo" class="find-me-online"></a>
-                </li>
-              </ul>
-            </div> <!--End div projects-->
-
-<!-- FINDMEONLINE -->
-            <div id="find-me">
-              <p class="subheading"> Some of the Languages I practice</p>
-                <ul class="projects-flex">
-                  <li><img src="images/html.png" alt="Html Logo" title="HTML5"class="project-logo"></li>
-                  <li><img src="images/css.png" alt="Css Logo" title="CSS3"class="project-logo"></li>
-                  <li><img src="images/js.png" alt="JavaScript Logo" title="JavaScript" class="project-logo"></li>
-                  <li><img src="images/jq.png" alt="jQuery Logo" title="jQuery" class="project-logo"></li>
-                </ul>
-            </div> <!--End div projecticons -->
-
-<!-- RESUME -->
-            <div id="resume">
-            <p class="subheading">Resume</p>
-              <form target="_blank" action="resumepdf.pdf" method="get">
-                <button class="call-to-action-button">
-                  Click Here to Download my Full Resume
-                </button>
-              </form>
-              <div class="grid">
-                <div class="column-one-grid">
-                  <ul>
-                    <li><h1>Work Experience:</h1></li>
-                  <ul>
-                </div>
-                <div class="column-two-grid">
-                  <ul>
-                    <li>
-                      <h2 class="date-grid">2017 - Present</h2>
-                      <h4>CrispyWebsite</h4>
-                      <h5>Front-End Web Developer</h5>
-                      <p>Build and maintain websites</p>
-                    </li>
-                    <li>
-                      <h2 class="date-grid">January 2017 - April 2017</h2>
-                      <h4>CVS</h4>
-                      <h5>Pharmacy Technician</h5>
-                      <p>Collaborate with Pharmacist to ensure our customers receive quality care.
-                         Sort pills, create labels, answer phones, and ring up purchases at the register
-                         or drive-thru.
-                      </p>
-                    </li>
-                  </ul>
-                </div> <!-- end columnTwoGrid -->
-                <div class="column-one-grid">
-                    <ul>
-                      <li><h1>Education:</h1></li>
-                    <ul>
-                </div> <!-- End div educationColumnOneGrid -->
-                <div class="column-two-grid">
-                  <ul>
-                    <li>
-                      <h2 class="date-grid">2017</h2>
-                      <h4>CodeLouisville</h4>
-                      <p>Front End Web Development Certificate - Pending</p>
-                    </li>
-                    <li>
-                      <h2 class="date-grid">2015</h2>
-                      <h4>Eastern Kentucky University</h4>
-                      <p>Bachelor of Science in Biology</p>
-                    </li>
-                    <li>
-                      <h2 class="date-grid">2013</h2>
-                      <h4>Big Sandy Community and Technical College</h4>
-                      <p>Associate in Science - 2011</p>
-                      <p>Associate in Art
-                    </li>
-                  </ul>
-                </div> <!-- end columnTwoGrid -->
-              </div> <!-- End div grid -->
-            </div> <!--End div resume-->
-
-<!-- ABOUT ME -->
-            <div id="about">
-              <p class="subheading">About Me</p>
-              <div class="about-me-flexbox">
-                <div class="about-me-text">Greetings everyone! On July 2017, I was fortunate to get accepted to CodeLouisville's Front-End Web Development program.
-                In 2015, I recieved my Bachelor of Science degree in Biology from EKU. In addition, I have two Associate Degrees - Art and Science - from Big Sandy College
-                Community and Technical College. I studied pharmacy abroad for one year in Syria during 2010. I was introduced to web design by my dad's friend back in 2004 when I was 11 years old.
-                He showed me how to create a basic website using Microsoft FrontPage. The first HTML element I used was <code>&lt;marquee&gt;</code>. He also showed me how to host it to Angelfire.
-                I thought that was the coolest thing ever!
-                </div>
-                <div class="about-me-photo"><img class="about-me-photo" src="images/asaad.jpg" alt="another photo of me"></div>
-              </div> <!--End div aboutMeFlexbox -->
-            </div> <!--End div aboutme -->
-
-<!-- CONTACT ME -->
-            <div id="contact">
-              <p class="subheading">Contact Me</p>
-              <div class="contact-card">
-                <h3>Contact Info:</h3>
-                <p><a href="tel:6063396390">&phone;: (606) 339-6390</a></p>
-                <p><a href="mailto:asaad1592@gmail.com">Email: asaad1592@gmail.com</a></p>
-              </div> <!-- End div contactCard -->
-            </div> <!--End div contactMe -->
-
-        </div> <!-- End div wrapper -->
-
-      <script src="https://code.jquery.com/jquery-3.2.1.js"
-      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-      crossorigin="anonymous"></script>
-      <script type="text/javascript" src="js/javascript.js"></script>
-      <script type="text/javascript" src="jquery/jquery.js"></script>
+      </div> <!-- End div wrapper -->
     <footer>
       <p>&copy; 2017 Developed by <a href="http://www.crispywebsite.com" target="_blank">CrispyWebsite<a></p>
     </footer>
+      <script src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="jquery/jquery.js"></script>
+      <script type="text/javascript" src="js/javascript.js"></script>
+      <script type="text/javascript" src="js/slick/slick.min.js"></script>
   </body>
 </html>

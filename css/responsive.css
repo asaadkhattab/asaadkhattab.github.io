@@ -1,89 +1,105 @@
 /*******************************************************************************
 MEDIA QUERIES
 *******************************************************************************/
-
-
-/* 480px: For The Landscape Display in phones */
-@media (min-width: 642px) {
-  /*******************************************************************************
-  LOGOS AND NAVIGATION
-  *******************************************************************************/
-
-  .main-header{
-    display: block;
-    flex-direction: row;
-    height: 150px;
-    padding: 10px;
-  }
-
+/* PORTRAIT DISPLAY FOR MOBILE PHONES */
+@media (max-width: 575px) {
   .text-logo {
-    margin: 5px;
-  }
-
-  .navbar ul {
-    display: flex;
-    justify-content: center;
-  }
-
-  /*******************************************************************************
-  PROFILE PICTURE
-  *******************************************************************************/
-
-  .profile-pic {
-    margin: 100px auto;
-    transition: all .20s;
-  }
-
-  .profile-pic:hover {
-    transform: scale(2) rotate(10deg);
-  }
-
-  /*******************************************************************************
-  ABOUT ME
-  *******************************************************************************/
-  .about-me-flexbox {
-    display: flex;
-    justify-content: center;
-  }
-
-  .about-me-text {
-    font-size: 20px;
-    flex-grow: 1;
-    border-radius: 0px;
     margin: 0;
-    padding: 20px;
+    padding-top: 32px;
   }
 
-  .about-me-photo {
-    border-radius: 0px;
+  .welcome-text {
+    font-size: 1.7em;
+  }
+
+  .navigation a {
+    display: none;
   }
 }
 
-/* 600px: For The Tablet Display */
-@media (min-width: 800px) {
-  .main-header{
+@media (min-width: 576px) {
+  .navigation select, .navigation button {
+    display:none;
+  }
+}
+
+/* LANDSCAPE DISPLAY FOR MOBILE PHONES */
+@media (min-width: 576px) and (max-width:767px) {
+  .main-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .navigation {
     flex-direction: row;
-    bottom: 0;
-    position: fixed;
-    padding: 5px;
   }
 
+  .carousel,
+  .grid-half {
+    height: calc(100vh - 120px);
+  }
+  footer {
+    margin-top: 100px;
+  }
 }
 
-@media (min-width: 1200px) {
-
-  .text-logo {
-    margin: 10px auto 10px 100px;
-  }
-
+/* TABLETS */
+@media (min-width: 768px) and (max-width: 991px) {
   .main-header {
     bottom: 0;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
+    position: fixed;
   }
 
-  .navbar ul {
-    margin: 5px 100px 5px auto;
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
+
+  .carousel,
+  .grid-half {
+    height: calc(100vh - 120px);
+  }
+
+  footer {
+    margin-bottom: 125px;
+  }
+
+
+
+}
+
+/* LARGE DESKTOPS */
+@media (min-width: 992px) {
+  .main-header {
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    height: 100px;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 1px;
+    margin-right: 25px;
+  }
+
+  .text-logo {
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: auto;
+  }
+
+  .carousel,
+  .grid-half {
+    height: calc(100vh - 100px);
+  }
+
+  footer {
+    margin-bottom: 100px;
+
+  }
+
 }

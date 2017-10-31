@@ -1,16 +1,12 @@
 /*** Colors for CSS ***/
 
-:visited {
+a :visited {
  color: #fff;
 }
 
 /* Pages Background Color*/
 
-#welcome-page {
-  background-color: #6ab47b;
-  padding: 20px;
-}
-
+ 
 #find-me {
   background-color: #800000;
 }
@@ -28,31 +24,30 @@
 }
 
 #contact {
-  background: orange;
-  padding-bottom: 10px;
+  background: #33b5e5;
 }
 
-
 /* Header */
+
 .main-header {
-  background-color: #eee;
+  background: #0d47a1;
 }
 
 .subheading {
   color: #fff;
-  background-color: #0099CC;
+  background-color: #007E33;
 }
 
 /* Navigation */
-.navbar a {
+.navigation a {
   color: #fff;
 }
 
-.navbar a:active {
+.navigation a:active {
   background-color: #fff;
 }
 
-.navbar a:active {
+.navigation a:active {
   color: #000;
 }
 
@@ -61,7 +56,7 @@
 }
 
 .text-logo a:visited {
-  color: white;
+  color: #fff;
 }
 
 .welcome-text {
@@ -122,12 +117,8 @@
 /* FOOTER */
 
 footer {
-  text-align: center;
-  font-size: 20px;
   color: #fff;
   background-color: #000;
-  margin-top: 0px;
-  padding: 20px;
 }
 
 /*******************************************************************************
