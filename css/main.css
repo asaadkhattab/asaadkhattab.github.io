@@ -255,19 +255,3 @@ Carousel
 .slick-dots li button:before {
     font-size: 16px;
 }
-
-.success-color{
-  background-color: #00C851;
-}
-
-.info-color{
-  background-color: #33b5e5;
-}
-
-.warning-color-dark {
-  background-color: #ff8800
-}
-
-.secondary-color-dark {
-  background-color: #9933cc;
-}

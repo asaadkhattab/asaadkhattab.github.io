@@ -6,7 +6,7 @@ a :visited {
 
 /* Pages Background Color*/
 
- 
+
 #find-me {
   background-color: #800000;
 }
@@ -122,24 +122,37 @@ footer {
 }
 
 /*******************************************************************************
-jQuery
+jQuery Colors
 *******************************************************************************/
-/* div change background color for welcome page */
+
 .danger-color {
 	background: #ff4444;
-}
-
-.warning-color {
-	background: #ffbb33;
 }
 
 .default-color {
   background-color: #6ab47b;
 }
+
+.info-color{
+  background-color: #33b5e5;
+}
+
+
 .secondary-color {
 	background: #aa66cc;
 }
 
-.info-color {
-  background-color: #33b5e5;
+.secondary-color-dark {
+  background-color: #9933cc;
+}
+
+.success-color{
+  background-color: #00C851;
+}
+
+.warning-color {
+	background: #ffbb33;
+}
+.warning-color-dark {
+  background-color: #ff8800
 }

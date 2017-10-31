@@ -1,4 +1,4 @@
-/* Slick Carousel jQuery Plugin */
+/* SLICK CAROUSEL JQUERY PLUGIN */
 $(document).ready(function(){
   $('.carousel').slick({
     fade: true,
@@ -10,7 +10,7 @@ $(document).ready(function(){
   });
 });
 
-/* Animsition jQuery Plugin*/
+/* ANIMSITION PLUGIN */
 $(document).ready(function() {
   $(".animsition").animsition({
     inClass: 'fade-in-right',
@@ -34,4 +34,21 @@ $(document).ready(function() {
     overlayParentElement : 'body',
     transition: function(url){ window.location.href = url; }
   });
+});
+
+/* MENU OPTIONS FOR MOBILE DISPLAY */
+var $select = $("<select></select>");
+$(".navigation").append($select);
+$(".navigation a").each(function(){
+  var $anchor = $(this);
+  var $option = $("<option></option>");
+  if($anchor.parent().hasClass("selected")) {
+    $option.prop("selected", true);
+  }
+  $option.val($anchor.attr("href"));
+  $option.text($anchor.text());
+  $select.append($option);
+});
+  $select.change(function(){
+  window.location = $select.val();
 });
