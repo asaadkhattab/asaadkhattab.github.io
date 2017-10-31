@@ -5,10 +5,6 @@
     padding-top: 32px;
   }
 
-  .welcome-text {
-    font-size: 1.7em;
-  }
-
   .navigation a {
     display: none;
   }
@@ -20,13 +16,27 @@
     float: left;
   }
 
+  /* CAROUSEL */
+  .slide h1 {
+    margin: 25% 0 20px;
+  }
+
+  .slide {
+    padding-left: 100px;
+  }
+
+  .slide img {
+    width: 50%;
+    margin: 50px auto;
+  }
+
 }
 
+/* MOBILE OPTION MENU*/
 @media (min-width: 576px) {
   .navigation select, .navigation button {
     display:none;
   }
-
 }
 
 /* LANDSCAPE DISPLAY FOR MOBILE PHONES */
@@ -45,9 +55,19 @@
     margin-top: 100px;
   }
 
-  .wrapper,
   .slide {
     height: calc(100vh - 220px);
+  }
+
+  /* CAROUSEL */
+  .slide h1 {
+    margin: 200px 0 20px;
+
+  }
+
+  .slide img {
+    width: 50%;
+    margin: 200px auto;
   }
 }
 
