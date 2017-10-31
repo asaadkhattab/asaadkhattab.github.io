@@ -1,30 +1,11 @@
 /*** Colors for CSS ***/
 
-a :visited {
+a:visited {
  color: #fff;
 }
 
-/* Pages Background Color*/
-
-
-#find-me {
-  background-color: #800000;
-}
-
-#projects {
-  background-color: #008080;
-}
-
-#resume {
-  background-color: #424242;
-}
-
-#about {
-  background: blue;
-}
-
-#contact {
-  background: #33b5e5;
+a:active {
+  color: #fff;
 }
 
 /* Header */
@@ -133,10 +114,9 @@ jQuery Colors
   background-color: #6ab47b;
 }
 
-.info-color{
+.info-color {
   background-color: #33b5e5;
 }
-
 
 .secondary-color {
 	background: #aa66cc;
@@ -146,7 +126,7 @@ jQuery Colors
   background-color: #9933cc;
 }
 
-.success-color{
+.success-color {
   background-color: #00C851;
 }
 

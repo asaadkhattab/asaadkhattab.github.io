@@ -33,57 +33,69 @@
       </header>
 
       <!-- Carousel -->
-      <div class="carousel">
-        <!-- First Slide -->
-        <div class="slide info-color">
-          <div class="grid-half">
-            <h1 class="welcome-text">
-            <p class="carousel-span">
-            <script>
-              var day = new Date().getHours();
-              if ( day < 12 ){ document.write("Good morning");}
-              else if ( day >= 12 && day <= 17 )
-              { document.write("Good afternoon"); }
-              else { document.write("Good evening"); }
-            </script>,
-            everyone!</br> I'm a Front-End Web Developer...</h1>
-          </p>
-          </div>
-          <div class="grid-half">
-              <img src="images/profilepic.jpg" alt="Picture of Asaad Khattab" class="profile-pic">
-          </div>
-        </div>
-        <!-- Second Slide -->
-        <div class="slide success-color">
-          <div class="grid-half">
-            <h1 class="welcome-text">I'm on the Following Social Media</h1>
-          </div>
-          <div class="grid-half">
-            <li>Facebook</li>
-          </div>
-        </div>
+      <div class="container-for-carousel">
+        <div class="grid-full">
+           <div class="carousel">
+              <!-- Slide 1 -->
+              <div class="slide info-color">
+                <div class="grid-half">
+                  <h1>
+                    <script>
+                      var day = new Date().getHours();
+                      if ( day < 12 ){ document.write("Good morning");}
+                      else if ( day >= 12 && day <= 17 )
+                      { document.write("Good afternoon"); }
+                      else { document.write("Good evening"); }
+                    </script>, everyone!
+                  </h1>
+                  <p>
+                  </br> I'm a Front-End Web Developer...</h1>
+                  </p>
+                  <a href="#" class="button">Check it Out</a>
+                </div>
+                <div class="grid-half">
+                  <img src="images/profilepic.jpg" alt="Picture of Asaad Khattab" class="profile-pic">
+                </div>
+              </div>
 
-        <!-- Third Slide -->
-        <div class="slide warning-color-dark ">
-          <div class="grid-half">
-            <h1 class="welcome-text">I'm on the Following Social Media</h1>
-          </div>
-          <div class="grid-half">
-            <li>Facebook</li>
+              <!-- Slide 2 -->
+              <div class="slide success-color">
+                <div class="grid-half">
+                  <h1>ChitChat</h1>
+                  <p>The worldest easiest to use cross device chat app</p>
+                  <a href="#" class="button">Check it Out</a>
+                </div>
+                <div class="grid-half">
+                  <img src="img/slide-chitChat.png" alt="" />
+                </div>
+              </div>
+
+              <!-- Slide 3-->
+              <div class="slide warning-color">
+                <div class="grid-half">
+                  <h1>MixTape</h1>
+                  <p>An app to search, create and share mixtapes</p>
+                  <a href="#" class="button">Check it Out</a>
+                </div>
+                <div class="grid-half">
+                  <img src="img/slide-mixTape.png" alt="" />
+                </div>
+              </div>
+
+              <!-- Slide 4-->
+              <div class="slide secondary-color">
+                <div class="grid-half">
+                  <h1>KITT</h1>
+                  <p>Turn your car into KITT from Knight Rider</p>
+                  <a href="#" class="button">Check it Out</a>
+                </div>
+                <div class="grid-half">
+                  <img src="img/slide-kitt.png" alt="" />
+                </div>
+              </div><!-- Slide 4-->
           </div>
         </div>
-
-        <!-- Fourth Slide -->
-        <div class="slide secondary-color-dark ">
-          <div class="grid-half">
-            <h1 class="welcome-text">I'm on the Following Social Media</h1>
-          </div>
-          <div class="grid-half">
-            <li>Facebook</li>
-          </div>
-        </div>
-
-      </div> <!-- End Carousel -->
+      </div>
 
       </div> <!-- End div wrapper -->
     <footer>

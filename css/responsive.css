@@ -12,12 +12,21 @@
   .navigation a {
     display: none;
   }
+
+  .grid-half {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    float: left;
+  }
+
 }
 
 @media (min-width: 576px) {
   .navigation select, .navigation button {
     display:none;
   }
+
 }
 
 /* LANDSCAPE DISPLAY FOR MOBILE PHONES */
@@ -32,12 +41,13 @@
     flex-direction: row;
   }
 
-  .carousel,
-  .grid-half {
-    height: calc(100vh - 120px);
-  }
   footer {
     margin-top: 100px;
+  }
+
+  .wrapper,
+  .slide {
+    height: calc(100vh - 220px);
   }
 }
 
@@ -57,14 +67,13 @@
   footer {
     margin-bottom: 125px;
   }
-}
 
-@media (min-width: 768px){
-  .carousel,
-  .grid-half {
-    height: calc(100vh - 100px);
+  .wrapper,
+  .slide {
+    height: calc(100vh - 125px);
   }
 }
+
 
 /* LARGE DESKTOPS */
 @media (min-width: 992px) {
@@ -91,4 +100,14 @@
   footer {
     margin-bottom: 100px;
   }
+
+  .slide {
+
+  }
+  .wrapper,
+  .slide {
+    height: calc(100vh - 100px);
+  }
+
+
 }

@@ -1,28 +1,17 @@
-/*************************** Main CSS by Asaad Khattab *****************************/
+/*************************** MAIN CSS BY ASAAD KHATTAB *****************************/
 
 * {
   box-sizing: border-box;
   text-decoration: none;
 }
 
-:active {
-  color: #fff;
-}
-
-:visited {
-  color: #fff;
-}
-
+/* A CONTAINER SO THE FOOTER WILL FALL */
 .wrapper {
   height: calc(100vh - 100px);
 }
 
 /*******************************************************************************
-jQuery
-*******************************************************************************/
-
-/*******************************************************************************
-HEADERs--- IN ORDER
+HEADER AND NAVIGATION
 *******************************************************************************/
 
 .main-header {
@@ -31,10 +20,6 @@ HEADERs--- IN ORDER
   z-index: 99;
   margin: 0 auto;
 }
-
-/*******************************************************************************
-NAVIGATION
-*******************************************************************************/
 
 .navigation {
   display: flex;
@@ -69,24 +54,12 @@ LOGOS
   margin: 0 auto;
 }
 
-.welcome-text {
-  display: block;
-  font-size: 2em;
-  margin: 40px 0 0;
-  color: #fff;
-  text-align: center;
-}
-
 .profile-pic {
   max-width: 150px;
   border-radius: 100%;
-  margin: 100px 10%;
-  vertical-align: middle;
-  display: block;
   border: 5px solid white;
   transition: all .20s;
 }
-
 
 .profile-pic:hover {
   transform: scale(1.5) rotate(10deg);
@@ -235,23 +208,76 @@ footer {
 /*******************************************************************************
 Carousel
 *******************************************************************************/
-.slide h1 {
-  margin: 25% 0 20px;
-  color: #fff;
-}
-.carousel,
-.grid-half {
-  height: calc(100vh - 220px);
+
+.container-for-carousel {
+  margin: 0 auto;
+  padding: 0;
 }
 
+.carousel {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 40px;
+}
+
+.slide {
+  width: 100%;
+  text-align: center;
+  height: calc(100vh - 210px);
+}
+
+.slide h1 {
+  width: 100%;
+  margin: 300px 0 20px;
+  color: #fff;
+}
+
+.slide p {
+  width: 60%;
+  margin: 0 20% 40px;
+  font-size: 26px;
+  color: #fff;
+}
+
+.slide .button {
+  color: #fff;
+  border-color: #fff;
+  opacity: .6;
+}
+
+.slide .button:hover {
+  opacity: 1;
+}
+
+.slide img {
+  width: 50%;
+  margin: 300px 50% 300px 10%;
+}
+
+.grid-full {
+  width: 100%;
+  float: left;
+}
 .grid-half {
   width: 50%;
   float: left;
 }
 
+/* Dots and Arrows */
+.slick-next,
+.slick-prev {
+  right: 30px;
+  z-index: 99;
+}
+
+.slick-prev {
+  left: 30px;
+}
+
 .slick-dots {
     bottom: 30px;
 }
+
 .slick-dots li button:before {
     font-size: 16px;
 }

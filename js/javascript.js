@@ -4,7 +4,6 @@ $(document).ready(function(){
     fade: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: false,
     pauseOnHover:true,
     dots: true,
   });
