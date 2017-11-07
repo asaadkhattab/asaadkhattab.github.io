@@ -1,22 +1,21 @@
 /*******************************************************************************
 CAROUSEL JQUERY PLUGIN
 *******************************************************************************/
+/* MOBILE FIRST STRATEGY */
 
-/* Button */
-.button {
-  border: 2px solid #D5DDE4;
+/* BUTTON */
+.carousel-button {
   padding: 12px 20px;
-  color: #000;
+  color: #fff;
   transition: .35s;
   font-weight: 400;
   width: 150px;
-  margin-top: 20px;
+  margin-top: 30px;
   opacity: .5;
+  border: 3px solid #fff;
+  background-color: transparent;
 }
 
-.button:hover {
-  border-color: #fff;
-}
 
 .front-cover {
   background: url('../images/front-cover.jpg');
@@ -27,9 +26,9 @@ CAROUSEL JQUERY PLUGIN
 }
 
 .carousel-text-container {
-  margin: 30px auto;
-  box-shadow: 10px 10px 5px #888888;
-  background: rgba(0, 0, 0, 0.8);
+  margin: 20px auto;
+  box-shadow: 5px 5px 5px #888888;
+  background: rgba(0, 0, 0, 0.7);
   width: 350px;
   padding: 70px 30px;
   border-radius: 10px;
@@ -52,28 +51,20 @@ CAROUSEL JQUERY PLUGIN
   float: left;
 }
 
-.carousel {
-
-  margin: 0 auto 10px;
-}
-
 .slide {
-  height: 100vh;
+
+height: 800px;
 
 }
 
 .slide h1 {
-
   color: #fff;
 }
 
 .slide p {
-  width: 100%;
-
   font-size: 26px;
   text-align: center;
   color: #fff;
-
 }
 
 .slide .button {
@@ -110,20 +101,65 @@ CAROUSEL JQUERY PLUGIN
     font-size: 16px;
 }
 
+/* LANDSCAPE DISPLAY FOR MOBILE PHONES */
+@media (min-width: 576px) and (max-width:767px) {
+  .grid-half {
+    width: 10%;
+    float: left;
+  }
 
-@media (min-width: 600px) {
+  .carousel-text-container {
+    left: 50%;
+    top: 25%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 500px;
+  }
+
+}
+
+/* Tablets*/
+@media (min-width: 768px) and (max-width: 991px) {
 
   .grid-half {
-    width: 60%;
+    width: 90%;
     float: left;
+  }
+
+  .carousel-text-container {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 500px;
   }
 
   .slide {
     height: calc(100vh - 130px);
   }
 
+}
+
+/* Large Destops and Laptops*/
+@media (min-width: 992px) {
+
+  .grid-half {
+    width: 80%;
+    float: left;
+  }
+
+
   .carousel-text-container {
-    margin: 200px 10% 10% 20%;
+    position: none;
+    margin: 50px 10% 10% -19%;
+    width: 500px;
+  }
+
+  .carousel-text-container {
+    left: 50%;
+    top: 45%;
+    position: absolute;
+    transform: translate(-50%, -50%);
     width: 500px;
   }
 
@@ -132,19 +168,9 @@ CAROUSEL JQUERY PLUGIN
     height: 200px;
     margin: 10px 5px 100px 60%;
   }
-}
-
-@media (min-width: 992px) {
-  .grid-half {
-    width: 50%;
-    float: left;
-  }
 
   .slide {
     height: calc(100vh - 100px);
-  }
-  .carousel-text-container {
-
   }
 
 }

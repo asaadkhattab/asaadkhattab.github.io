@@ -14,6 +14,9 @@ hr {
   background-color: #fff;
   width: 50%;
 }
+html {
+  margin-bottom: 0;
+}
 
 /*******************************************************************************
 HEADER AND NAVIGATION
@@ -52,7 +55,7 @@ HEADER AND NAVIGATION
   padding: .50em .70em;
   border: 1.5px solid transparent;
   transition-property: border, border-radius;
-  transition-duration: .5s, .9s;
+  transition-duration: .5s, .7s;
   margin-right: 1px;
 }
 
@@ -68,6 +71,7 @@ HEADER AND NAVIGATION
 .navigation a:focus {
   border-radius: 5px;
 }
+
 .text-logo :hover,
 .navigation a:hover,
 .navigation a:focus {

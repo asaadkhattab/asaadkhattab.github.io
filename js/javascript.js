@@ -1,3 +1,7 @@
+/* WELCOME MESSAGE - TIME OF DAY  */
+// $(document).ready(function(){
+// 
+//   });
 
 /* SLICK CAROUSEL JQUERY PLUGIN */
 $(document).ready(function(){
