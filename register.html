@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Asaad Khattab | Freelance Web Developer - Louisville, Kentucky</title>
+      <meta charset="utf-8">
+      <meta name="author" content="Asaad Khattab">
+      <meta name="robots" content="index, follow">
+      <meta name="language" content="English" />
+      <meta name="description" content="My name is Asaad Khattab and I'm a freelancer looking for a job.
+      Web Development is what makes me stay up late, forget to eat, and wake up early.">
+      <meta name="keywords" content="asaad, khattab, web, developer, html, javascript, css, bootstrap louisville, kentucky">
+      <!-- Mobile Meta -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- BOOTSTRAP -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <!-- CSS -->
+      <link rel="stylesheet" href="css/import.css">
+      <link rel="stylesheet" href="css/register.css">
+
+      <!-- Favicon -->
+      <link rel="icon" href="fav.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <!--Main Header and Navigation -->
+      <header class="main-header">
+        <h1 class="text-logo"><a href="index.html">Asaad Khattab</a></h1>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- JumboTron-->
+      <div class="jumbotron">
+        <h1 class="display-3">Register</h1>
+        <p class="lead">Create an account.</p>
+        <hr class="my-4">
+        <p>Register today to get access to our tools and receive benefits.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#register" role="button">Sign Up</a>
+        </p>
+      </div>
+
+      <!-- Demonstration Only Warning -->
+      <div class="container alert alert-danger" role="alert">
+        The following form is for demonstration purposes only! It doesn't submit..
+      </div>
+
+      <!-- Form Demo -->
+      <form id="register" method="get" action="thankyou.html">
+        <h1 id="formh1">Join</h1>
+        <hr>
+
+        <fieldset>
+          <legend><span class="roman">I</span>Tell us a little about yourself...</legend>
+
+            <label for="firstname">First Name: </label>
+            <input type="text" id="firstname" name="user-first-name">
+
+            <label for="lastname">Last Name: </label>
+            <input type="text" id="lastname" name="user-last-name">
+
+            <label for="birthday">Birthday: </label>
+            <input type="date" id="birthday" name="user-birthday">
+
+            <label>Gender:</label>
+              <input type="radio" id="male" value="male" name="user-gender">
+              <label for="male" class="genderradio">Male</label>
+
+              <input type="radio" id="female" value="female" name="user-gender">
+              <label for="female" class="genderradio">Female</label>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+          <legend><span class="roman">II</span>Interests...</legend>
+          <label>Preferred website editor:</label>
+
+            <label for="visual" class="editorcheckbox">Visual Studio Code</label>
+            <input type="checkbox" id="visual" name="webeditor" value="visual">
+
+            <label for="sublime" class="editorcheckbox">Sublime Text</label>
+            <input type="checkbox" id="sublime" name="webeditor" value="sublime">
+
+            <label for="atomio" class="editorcheckbox">Atom.io</label>
+            <input type="checkbox" id="atomio" name="webeditor" value="atomio">
+
+            <label for="brackets" class="editorcheckbox">Brackets</label>
+            <input type="checkbox" id="brackets" name="webeditor" value="brackets">
+
+            <label for="notepadplusplus" class="editorcheckbox">Notepad++</label>
+            <input type="checkbox" id="notepadplusplus" name="webeditor" value="notepadplusplus">
+
+            <label for="textmate" class="editorcheckbox">TextMate</label>
+            <input type="checkbox" id="textmate" name="webeditor" value="textmate">
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+          <legend><span class="roman">III</span>Info...</legend>
+
+            <label for="nickname">User Name: </label>
+            <input type="text" id="nickname" name="user-name">
+
+            <label for="emailaddress">Email Address: </label>
+            <input type="email" id="emailaddress" name="user-email" placeholder="myname@example.com">
+
+            <label for="telephone">Preferred Phone: </label>
+            <input type="tel" id="telephone" name="user-tel">
+
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="user-password">
+
+            <label for="confirmpassword">Confirm Password: </label>
+            <input type="password" id="confirmpassword" name="user-confirm-password">
+
+            <label for="securityquestion">Choose a Security Question: </label>
+              <select id="securityquestion" name="user-security-question">
+                <optgroup label="Select One">
+                <option value="question1">Your elementary school teacher's name?</option>
+                <option value="question3">Your library card number?</option>
+                <option value="question4">Your mom's maiden name?</option>
+                <option value="question5">Name of the city your parents met?</option>
+                <option value="question6">Your school's mascot?</option>
+                <option value="question7">Your first car?</option>
+              </select>
+              <label for="securityanswer">Enter an Answer:</label>
+              <input id="securityanswer" type="text" name="user-security-answer" size="10">
+        </fieldset>
+        <hr>
+
+      <button type="button" class="register-button">Join</button>
+      <button type="reset" class="register-button">Reset</button>
+
+    </div> <!-- End div wrapper -->
+  <footer>
+    <p>&copy; 2017 Developed by Asaad Khattab</p>
+  </footer>
+
+  <!--Javascript and jQuery-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- Slick Carousel CDN -->
+  <script type="text/javascript" src="js/slick/slick.min.js"></script>
+  <!-- Local JS File -->
+  <script type="text/javascript" src="js/javascript.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>

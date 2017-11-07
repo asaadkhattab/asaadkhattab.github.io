@@ -3,8 +3,8 @@
 $(document).ready(function(){
   $('.carousel').slick({
     fade: true,
-    /*autoplay: true,*/
-    /* autoplaySpeed: 3000,*/
+    /* autoplay: true, */
+    autoplaySpeed: 3000,
     pauseOnHover:true,
     dots: true,
   });

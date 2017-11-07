@@ -1,0 +1,96 @@
+/*******************************************************************************
+REGISTER -- SIGN UP
+*******************************************************************************/
+
+#formh1 {
+  color: #3F729B;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  padding: 15px;
+  max-width: 400px;
+  margin: 10px auto;
+  border: transparent;
+  background: rgba(3, 169, 244, 0.7);
+  border-radius: 10px;
+  outline: 0;
+  color: #000;
+  font-size: 16px;
+
+}
+
+
+input[type="date"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="text"],
+select
+{
+  width: 100%;
+  margin: 0; /*for the select security question to stay centered */
+  margin-bottom: 15px;
+  border: 1px solid brown;
+  border-radius: 1em;
+  background-color: #e0e0e0;
+  height: 2em;
+  font-size: 20px;
+  padding: 10px;
+
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 2px;
+
+}
+
+.genderradio,
+.editorcheckbox{
+  display: inline-flex;
+
+}
+
+legend {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+label {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+fieldset {
+  border: transparent;
+  margin: 30px auto;
+}
+
+/* Roman Numeral List */
+.roman {
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  margin-right: .5em;
+  font-size: .8em;
+  color: #fff;
+  background-color: #0d47a1;
+
+}
+
+.register-button {
+  background-color: #FF8800;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin: 5% auto;
+  padding: 5%;
+  border-radius: 10px;
+}
