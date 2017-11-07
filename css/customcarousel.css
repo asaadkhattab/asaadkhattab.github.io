@@ -1,0 +1,149 @@
+/*******************************************************************************
+CAROUSEL JQUERY PLUGIN
+*******************************************************************************/
+
+.front-cover {
+  background: url('../images/front-cover.jpg');
+  overflow: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-text-container {
+  margin: 10px 10% 30% 5%;
+  width: 100%;
+}
+
+.carousel-text {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 70px 30px;
+  transition: .5s;
+  width: 370px;
+}
+
+.carousel-text:hover {
+  background: rgba(176, 23, 31, 1);
+}
+
+.container-for-carousel {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.grid-full {
+  width: 100%;
+  float: left;
+}
+
+.grid-half {
+  width: 80%;
+  text-align: center;
+  float: left;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 10px;
+}
+
+.slide {
+  width: 100%;
+  height:calc(100vh);
+}
+
+.slide h1 {
+  width: 100%;
+  margin: 5px 2px;
+  margin-right:0;
+  color: #fff;
+}
+
+.slide p {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 26px;
+  text-align: center;
+  color: #fff;
+
+}
+
+.slide .button {
+  color: #fff;
+  border-color: #fff;
+  opacity: .6;
+}
+
+.slide .button:hover {
+  opacity: 1;
+}
+
+
+
+.slide img {
+  width: 50%;
+  margin: 100px 50% 100px 30%;
+}
+
+
+/* DOTS AND ARROWS */
+.slick-next,
+.slick-prev {
+  right: 30px;
+  z-index: 99;
+}
+
+.slick-prev {
+  left: 30px;
+}
+
+.slick-dots {
+    bottom: 30px;
+}
+
+.slick-dots li button:before {
+    font-size: 16px;
+}
+
+@media (min-width: 767px) {
+
+  .grid-half {
+    width: 50%;
+    float: left;
+  }
+
+  .slide {
+    height: calc(100vh - 130px);
+  }
+
+  .carousel-text-container {
+    margin: 270px 10% 10% 5%;
+  }
+
+  .carousel-text {
+    padding: 30px 10px;
+    width: 75%;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-half {
+    width: 50%;
+    float: left;
+  }
+
+  .slide {
+    height: calc(100vh - 100px);
+  }
+  .carousel-text-container {
+    margin: 270px 10% 10% 15%;
+  }
+  .carousel-text {
+    padding: 100px 30px;
+    width: 550px;
+  }
+}

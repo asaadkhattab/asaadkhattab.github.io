@@ -1,10 +1,8 @@
-/*jQuery Plugins*/
-@import url("../js/animsition/animsition.min.css");
-@import url("../js/slick/slick.css");
-@import url("../js/slick/slick-theme.css");
-
 /* Main CSS Files */
-@import url("../css/normalize.css");
+/*@import url("../css/normalize.css");*/
 @import url("../css/main.css");
 @import url("../css/responsive.css");
 @import url("../css/colors.css");
+
+/* WEBFONTS*/
+@import url('https://fonts.googleapis.com/css?family=Alegreya+SC:400,700');

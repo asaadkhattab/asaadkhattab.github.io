@@ -1,13 +1,32 @@
 /*************************** MAIN CSS BY ASAAD KHATTAB *****************************/
-
 * {
   box-sizing: border-box;
-  text-decoration: none;
+}
+
+ol,
+ul {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+}
+
+hr {
+  background-color: #fff;
+  width: 50%;
 }
 
 /*******************************************************************************
 HEADER AND NAVIGATION
 *******************************************************************************/
+
+/* .main-header includes h1 logo and navigation */
+.text-logo {
+  font-family: 'Alegreya SC', serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  padding: 15px;
+  margin: 0 auto;
+}
 
 .main-header {
   width: 100%;
@@ -21,6 +40,7 @@ HEADER AND NAVIGATION
   flex-direction: column;
   justify-content: center;
   padding: 5px;
+  margin: 0 auto;
 }
 
 .navigation a {
@@ -29,40 +49,41 @@ HEADER AND NAVIGATION
   font-size: 1.2em;
   font-family: 'Alegreya SC', serif;
   text-align: center;
-  padding: .90em;
-  border: 2px solid transparent;
+  padding: .50em .70em;
+  border: 1.5px solid transparent;
+  transition-property: border, border-radius;
+  transition-duration: .5s, .9s;
+  margin-right: 1px;
+}
+
+.clicked {
+  border-top: 1px solid #fff;
 }
 
 .navigation a:hover {
-  border: 2px solid #fff;
+  border: 1.5px solid #fff;
+  border-radius: 1em;
+}
+
+.navigation a:focus {
   border-radius: 5px;
+}
+.text-logo :hover,
+.navigation a:hover,
+.navigation a:focus {
+  text-decoration: none;
 }
 
 /*******************************************************************************
-LOGOS
+TRANSFORM AND TRANSITIONS
 *******************************************************************************/
 
-.text-logo {
-  font-family: 'Alegreya SC', serif;
-  font-size: 3em;
-  padding: auto;
-  margin: 0 auto;
-}
-
-.profile-pic {
-  max-width: 150px;
-  border-radius: 100%;
-  border: 5px solid white;
-  transition: all .20s;
-}
-
-.profile-pic:hover {
-  transform: scale(1.5) rotate(10deg);
-}
 
 /*******************************************************************************
 SECTIONS
 *******************************************************************************/
+/**************************** index.html **************************************/
+
 /**************************** Projects ****************************************/
 
 .find-me-online  {
@@ -98,10 +119,8 @@ ABOUT
 .about-me-text {
   font-size: 1em;
   width: 350px;
-  padding: 25px;
   border-bottom: 3px solid #eee;
   border-radius: 10px;
-  margin: 0 auto;
   margin-bottom: 10px;
 }
 
@@ -142,24 +161,14 @@ h4 {
   text-decoration: underline;
 }
 
-.call-to-action-button {
-  width: 50%;
-  display: block;
-  padding: 20px 10px;
-  margin: 10px auto;
-  font: 20px;
-  border-radius: 10px;
-}
-
 .grid {
   max-width: 850px;
   margin: 0 auto;
-  margin-top: 10px;
+  padding: 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto;
   grid-gap: 15px;
-  padding-bottom: 10px;
 }
 
 .column-one-grid {
@@ -171,7 +180,7 @@ h4 {
 }
 
 /*******************************************************************************
-CONTACT US
+CONTACT ME
 *******************************************************************************/
 .contact-card {
   width: 300px;
@@ -200,70 +209,20 @@ footer {
 }
 
 
-/*******************************************************************************
-Carousel
-*******************************************************************************/
-
-
-
-.slide {
-
-  text-align: center;
-  height: calc(100vh - 210px);
+/* BootStrap*/
+.container-fluid {
+  padding: 0px;
 }
 
-.slide h1 {
+#jumbo {
+  margin-bottom: 0;
+}
+
+#jumbo a:visited {
+  color: #fff;
+}
+
+.card-img-top {
   width: 100%;
-  margin: 300px 0 20px;
-  color: #fff;
-}
-
-.slide p {
-  width: 60%;
-  margin: 0 20% 40px;
-  font-size: 26px;
-  color: #fff;
-}
-
-.slide .button {
-  color: #fff;
-  border-color: #fff;
-  opacity: .6;
-}
-
-.slide .button:hover {
-  opacity: 1;
-}
-
-.slide img {
-  width: 50%;
-  margin: 300px 50% 300px 10%;
-}
-
-.grid-full {
-  width: 100%;
-  float: left;
-}
-.grid-half {
-  width: 50%;
-  float: left;
-}
-
-/* Dots and Arrows */
-.slick-next,
-.slick-prev {
-  right: 30px;
-  z-index: 99;
-}
-
-.slick-prev {
-  left: 30px;
-}
-
-.slick-dots {
-    bottom: 30px;
-}
-
-.slick-dots li button:before {
-    font-size: 16px;
+  height: 300px;
 }

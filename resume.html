@@ -6,104 +6,113 @@
       <meta name="author" content="Asaad Khattab">
       <meta name="robots" content="index, follow">
       <meta name="language" content="English" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="My name is Asaad Khattab and I'm a freelancer looking for a job.
       Web Development is what makes me stay up late, forget to eat, and wake up early.">
-      <meta name="keywords" content="asaad, khattab, web, developer, louisville, kentucky">
-      <!--CSS-->
+      <meta name="keywords" content="asaad, khattab, web, developer, html, javascript, css, bootstrap louisville, kentucky">
+      <!-- Mobile Meta -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- BOOTSTRAP -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <!-- CSS -->
       <link rel="stylesheet" href="css/import.css">
-      <link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+SC" rel="stylesheet">
+      <!-- Favicon -->
+      <link rel="icon" href="fav.ico" type="image/x-icon">
   </head>
 
-  <body class="animsition">
-    <div class="wrapper">
+  <body>
+    <div class="container-fluid wrapper">
       <!--Main Header and Navigation -->
       <header class="main-header">
-        <h1 class="text-logo">
-          <a href="index.html">Asaad Khattab</a>
-        </h1>
+        <h1 class="text-logo"><a href="index.html">Asaad Khattab</a></h1>
         <nav>
           <ul class="navigation">
-            <li><a href="index.html" class="animsition-link">Home</a></li>
-            <li><a href="resume.html" class="animsition-link">Resume</a></li>
-            <li><a href="about.html" class="animsition-link">About</a></li>
-            <li><a href="contact.html" class="animsition-link">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
 
-<div id="resume">
-<p class="subheading">Resume</p>
-  <form target="_blank" action="resumepdf.pdf" method="get">
-    <button class="call-to-action-button">
-      Click Here to Download my Full Resume
-    </button>
-  </form>
-  <div class="grid">
-    <div class="column-one-grid">
-      <ul>
-        <li><h1>Work Experience:</h1></li>
-      <ul>
-    </div>
-    <div class="column-two-grid">
-      <ul>
-        <li>
-          <h2 class="date-grid">2017 - Present</h2>
-          <h4>CrispyWebsite</h4>
-          <h5>Front-End Web Developer</h5>
-          <p>Build and maintain websites</p>
-        </li>
-        <li>
-          <h2 class="date-grid">January 2017 - April 2017</h2>
-          <h4>CVS</h4>
-          <h5>Pharmacy Technician</h5>
-          <p>Collaborate with Pharmacist to ensure our customers receive quality care.
-             Sort pills, create labels, answer phones, and ring up purchases at the register
-             or drive-thru.
-          </p>
-        </li>
-      </ul>
-    </div> <!-- end columnTwoGrid -->
-    <div class="column-one-grid">
-        <ul>
-          <li><h1>Education:</h1></li>
-        <ul>
-    </div> <!-- End div educationColumnOneGrid -->
-    <div class="column-two-grid">
-      <ul>
-        <li>
-          <h2 class="date-grid">2017</h2>
-          <h4>CodeLouisville</h4>
-          <p>Front End Web Development Certificate - Pending</p>
-        </li>
-        <li>
-          <h2 class="date-grid">2015</h2>
-          <h4>Eastern Kentucky University</h4>
-          <p>Bachelor of Science in Biology</p>
-        </li>
-        <li>
-          <h2 class="date-grid">2013</h2>
-          <h4>Big Sandy Community and Technical College</h4>
-          <p>Associate in Science - 2011</p>
-          <p>Associate in Art
-        </li>
-      </ul>
-    </div> <!-- end columnTwoGrid -->
-  </div> <!-- End div grid -->
-</div> <!--End div resume-->
+      <div class="jumbotron" id="jumbo">
+        <h1 class="display-3">Resume</h1>
+        <p class="lead">Yes! I'm available for work...</p>
+        <hr class="my-4">
+        <p>What I've been up to.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="resumepdf.pdf" role="button" target="_blank">Click Here to Download my Full Resume</a>
+        </p>
+      </div>
 
-</div> <!-- End div wrapper -->
-<footer>
-<p>&copy; 2017 Developed by <a href="http://www.crispywebsite.com" target="_blank">CrispyWebsite<a></p>
-</footer>
-<!--Javascript and jQuery-->
-<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="js/slick/slick.min.js"></script>
-<script type="text/javascript" src="js/animsition/animsition.min.js"></script>
-<script type="text/javascript" src="js/javascript.js"></script>
-<script type="text/javascript" src="jquery/jquery.js"></script>
+      <div class="special-dark-color">
+        <div class="grid">
+          <div class="column-one-grid">
+            <ul>
+              <li><h1>Work Experience:</h1></li>
+            <ul>
+          </div>
+          <div class="column-two-grid">
+            <ul>
+              <li>
+                <h2 class="date-grid">2017 - Present</h2>
+                <h4>CrispyWebsite</h4>
+                <h5>Front-End Web Developer</h5>
+                <p>Build and maintain websites</p>
+              </li>
+              <li>
+                <h2 class="date-grid">January 2017 - April 2017</h2>
+                <h4>CVS</h4>
+                <h5>Pharmacy Technician</h5>
+                <p>Collaborate with Pharmacist to ensure our customers receive quality care.
+                   Sort pills, create labels, answer phones, and ring up purchases at the register
+                   or drive-thru.
+                </p>
+              </li>
+            </ul>
+          </div> <!-- end columnTwoGrid -->
+          <div class="column-one-grid">
+              <ul>
+                <li><h1>Education:</h1></li>
+              <ul>
+          </div> <!-- End div educationColumnOneGrid -->
+          <div class="column-two-grid">
+            <ul>
+              <li>
+                <h2 class="date-grid">2017</h2>
+                <h4>CodeLouisville</h4>
+                <p>Front End Web Development Certificate - Pending</p>
+              </li>
+              <li>
+                <h2 class="date-grid">2015</h2>
+                <h4>Eastern Kentucky University</h4>
+                <p>Bachelor of Science in Biology</p>
+              </li>
+              <li>
+                <h2 class="date-grid">2013</h2>
+                <h4>Big Sandy Community and Technical College</h4>
+                <p>Associate in Science - 2011</p>
+                <p>Associate in Art
+              </li>
+            </ul>
+          </div> <!-- end columnTwoGrid -->
+        </div> <!-- End div grid -->
+      </div> <!--End div resume-->
 
-</body>
+    </div> <!-- End div wrapper -->
+
+    <footer>
+      <p>&copy; 2017 Developed by Asaad Khattab</p>
+    </footer>
+
+    <!--Javascript and jQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Slick Carousel CDN -->
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <!-- Local JS File -->
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
 </html>

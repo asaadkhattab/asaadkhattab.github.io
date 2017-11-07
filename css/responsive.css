@@ -2,34 +2,12 @@
 @media (max-width: 575px) {
   .text-logo {
     margin: 0;
-    padding-top: 32px;
   }
 
+  /* This will disable the links on the mobile view */
   .navigation a {
     display: none;
   }
-
-  .grid-half {
-    text-align: center;
-    margin: 0 auto;
-    width: 70%;
-    float: left;
-  }
-
-  /* CAROUSEL */
-  .slide h1 {
-    margin: 25% 0 20px;
-  }
-
-  .slide {
-    padding-left: 100px;
-  }
-
-  .slide img {
-    width: 50%;
-    margin: 50px auto;
-  }
-
 }
 
 /* MOBILE OPTION MENU*/
@@ -54,21 +32,6 @@
   footer {
     margin-top: 100px;
   }
-
-  .slide {
-    height: calc(100vh - 220px);
-  }
-
-  /* CAROUSEL */
-  .slide h1 {
-    margin: 200px 0 20px;
-
-  }
-
-  .slide img {
-    width: 50%;
-    margin: 200px auto;
-  }
 }
 
 /* TABLETS */
@@ -88,15 +51,14 @@
     margin-bottom: 125px;
   }
 
-  .wrapper,
-  .slide {
-    height: calc(100vh - 125px);
-  }
 }
-
 
 /* LARGE DESKTOPS */
 @media (min-width: 992px) {
+  .text-logo {
+    padding: 5px;
+  }
+
   .main-header {
     bottom: 0;
     position: fixed;
@@ -108,26 +70,17 @@
     display: flex;
     flex-direction: row;
     padding: 20px 1px;
-    margin-right: 25px;
+    margin-right: 70px;
+    margin-top: 5px;
   }
 
   .text-logo {
     margin-top: 20px;
-    margin-left: 25px;
+    margin-left: 70px;
     margin-right: auto;
   }
 
   footer {
     margin-bottom: 100px;
   }
-
-  .slide {
-
-  }
-  .wrapper,
-  .slide {
-    height: calc(100vh - 100px);
-  }
-
-
 }

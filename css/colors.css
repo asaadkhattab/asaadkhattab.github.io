@@ -1,10 +1,6 @@
 /*** Colors for CSS ***/
-
-a:visited {
- color: #fff;
-}
-
-a:active {
+.navigation a,
+.navigation a:visited {
   color: #fff;
 }
 
@@ -14,15 +10,7 @@ a:active {
   background: #0d47a1;
 }
 
-.subheading {
-  color: #fff;
-  background-color: #007E33;
-}
-
 /* Navigation */
-.navigation a {
-  color: #fff;
-}
 
 .navigation a:active {
   background-color: #fff;
@@ -32,23 +20,15 @@ a:active {
   color: #000;
 }
 
-.text-logo {
-  color: #fff;
-}
+/* SELECTED NAVIGATION LINK */
 
+.text-logo,
 .text-logo a:visited {
   color: #fff;
 }
 
-.welcome-text {
-  color: #fff;
-}
-
-.find-me-online {
-  background-color: #eee;
-}
-
-.project-logo  {
+.find-me-online,
+.project-logo {
   background-color: #eee;
 }
 
@@ -57,12 +37,7 @@ a:active {
   background-color: #fff;
 }
 
-/*Resume */
-
-.call-to-action-button {
-  color: #fff;
-  background-color: #800000;
-}
+/* RESUME*/
 
 .column-one-grid {
   background-color: #eee;
@@ -135,4 +110,8 @@ jQuery Colors
 }
 .warning-color-dark {
   background-color: #ff8800
+}
+
+.special-dark-color {
+  background-color: #263238;
 }

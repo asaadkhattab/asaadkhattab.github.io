@@ -6,28 +6,34 @@
       <meta name="author" content="Asaad Khattab">
       <meta name="robots" content="index, follow">
       <meta name="language" content="English" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="My name is Asaad Khattab and I'm a freelancer looking for a job.
       Web Development is what makes me stay up late, forget to eat, and wake up early.">
-      <meta name="keywords" content="asaad, khattab, web, developer, louisville, kentucky">
-      <!--CSS-->
+      <meta name="keywords" content="asaad, khattab, web, developer, html, javascript, css, bootstrap louisville, kentucky">
+      <!-- Mobile Meta -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- BOOTSTRAP -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <!-- CSS -->
       <link rel="stylesheet" href="css/import.css">
-      <link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+SC" rel="stylesheet">
+      <link rel="stylesheet" href="js/slick/slick.css">
+      <link rel="stylesheet" href="js/slick/slick-theme.css">
+      <link rel="stylesheet" href="css/customcarousel.css">
+      <!-- Favicon -->
+      <link rel="icon" href="fav.ico" type="image/x-icon">
   </head>
 
-  <body class="animsition">
-    <div class="wrapper">
+  <body>
+    <div class="container-fluid wrapper">
       <!--Main Header and Navigation -->
       <header class="main-header">
-        <h1 class="text-logo">
-          <a href="index.html">Asaad Khattab</a>
-        </h1>
+        <h1 class="text-logo"><a href="index.html">Asaad Khattab</a></h1>
         <nav>
           <ul class="navigation">
-            <li><a href="index.html" class="animsition-link">Home</a></li>
-            <li><a href="resume.html" class="animsition-link">Resume</a></li>
-            <li><a href="about.html" class="animsition-link">About</a></li>
-            <li><a href="contact.html" class="animsition-link">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -35,10 +41,12 @@
       <!-- Carousel -->
       <div class="container-for-carousel">
         <div class="grid-full">
-           <div class="carousel">
-              <!-- Slide 1 -->
-              <div class="slide info-color">
-                <div class="grid-half">
+          <div class="carousel">
+            <!-- Slide One -->
+            <div class="slide front-cover">
+              <div class="grid-half">
+                <div class="carousel-text-container">
+                  <span class="carousel-text">
                   <h1>
                     <script>
                       var day = new Date().getHours();
@@ -46,69 +54,51 @@
                       else if ( day >= 12 && day <= 17 )
                       { document.write("Good afternoon"); }
                       else { document.write("Good evening"); }
-                    </script>, everyone!
+                    </script>, everyone!<hr/>
                   </h1>
                   <p>
-                  </br> I'm a Front-End Web Developer...</h1>
+                  I'm a Front-End Web Developer...
                   </p>
-                  <a href="#" class="button">Check it Out</a>
-                </div>
-                <div class="grid-half">
-                  <img src="images/profilepic.jpg" alt="Picture of Asaad Khattab" class="profile-pic">
-                </div>
+                  </span>
+                </div> <!-- end carousel-text-container -->
               </div>
-
-              <!-- Slide 2 -->
-              <div class="slide success-color">
-                <div class="grid-half">
-                  <h1>ChitChat</h1>
-                  <p>The worldest easiest to use cross device chat app</p>
-                  <a href="#" class="button">Check it Out</a>
-                </div>
-                <div class="grid-half">
-                  <img src="img/slide-chitChat.png" alt="" />
-                </div>
+              <div class="grid-half">
+                <img src="images/asaad.jpg" alt="A photo of me">
               </div>
+            </div> <!-- End slide 1 info-color -->
 
-              <!-- Slide 3-->
-              <div class="slide warning-color">
-                <div class="grid-half">
-                  <h1>MixTape</h1>
-                  <p>An app to search, create and share mixtapes</p>
-                  <a href="#" class="button">Check it Out</a>
-                </div>
-                <div class="grid-half">
-                  <img src="img/slide-mixTape.png" alt="" />
-                </div>
-              </div>
+            <!-- Slide Two -->
+            <div class="slide success-color">
 
-              <!-- Slide 4-->
-              <div class="slide secondary-color">
-                <div class="grid-half">
-                  <h1>KITT</h1>
-                  <p>Turn your car into KITT from Knight Rider</p>
-                  <a href="#" class="button">Check it Out</a>
-                </div>
-                <div class="grid-half">
-                  <img src="img/slide-kitt.png" alt="" />
-                </div>
-              </div><!-- Slide 4-->
-          </div>
-        </div>
-      </div>
+            </div> <!-- End slide 2 info-color -->
 
-      </div> <!-- End div wrapper -->
+            <!-- Slide Three -->
+            <div class="slide warning-color">
+
+            </div> <!-- End slide 3 info-color -->
+
+            <!-- Slide Four -->
+            <div class="slide secondary-color">
+
+            </div> <!-- End slide 4 info-color -->
+
+          </div> <!-- End carousel -->
+        </div> <!-- End grid-full -->
+      </div> <!-- End container-for-carousel -->
+
+    </div> <!-- End div wrapper -->
     <footer>
-      <p>&copy; 2017 Developed by <a href="http://www.crispywebsite.com" target="_blank">CrispyWebsite<a></p>
+      <p>&copy; 2017 Developed by Asaad Khattab</p>
     </footer>
-      <!--Javascript and jQuery-->
-      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-      <script type="text/javascript" src="js/slick/slick.min.js"></script>
-      <script type="text/javascript" src="js/animsition/animsition.min.js"></script>
-      <script type="text/javascript" src="js/javascript.js"></script>
-      <script type="text/javascript" src="jquery/jquery.js"></script>
 
+    <!--Javascript and jQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Slick Carousel CDN -->
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <!-- Local JS File -->
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   </body>
 </html>

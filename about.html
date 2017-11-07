@@ -6,57 +6,73 @@
       <meta name="author" content="Asaad Khattab">
       <meta name="robots" content="index, follow">
       <meta name="language" content="English" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="My name is Asaad Khattab and I'm a freelancer looking for a job.
       Web Development is what makes me stay up late, forget to eat, and wake up early.">
-      <meta name="keywords" content="asaad, khattab, web, developer, louisville, kentucky">
-      <!--CSS-->
+      <meta name="keywords" content="asaad, khattab, web, developer, html, javascript, css, bootstrap louisville, kentucky">
+      <!-- Mobile Meta -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- BOOTSTRAP -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <!-- CSS -->
       <link rel="stylesheet" href="css/import.css">
-      <link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+SC" rel="stylesheet">
+      <!-- Favicon -->
+      <link rel="icon" href="fav.ico" type="image/x-icon">
   </head>
 
-  <body class="animsition">
-    <div class="wrapper">
+  <body>
+    <div class="container-fluid wrapper">
       <!--Main Header and Navigation -->
       <header class="main-header">
-        <h1 class="text-logo">
-          <a href="index.html">Asaad Khattab</a>
-        </h1>
+        <h1 class="text-logo"><a href="index.html">Asaad Khattab</a></h1>
         <nav>
           <ul class="navigation">
-            <li><a href="index.html" class="animsition-link">Home</a></li>
-            <li><a href="resume.html" class="animsition-link">Resume</a></li>
-            <li><a href="about.html" class="animsition-link">About</a></li>
-            <li><a href="contact.html" class="animsition-link">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
 
-<div id="about">
-  <p class="subheading">About Me</p>
-  <div class="about-me-flexbox">
-    <div class="about-me-text">Greetings everyone! On July 2017, I was fortunate to get accepted to CodeLouisville's Front-End Web Development program.
-    In 2015, I recieved my Bachelor of Science degree in Biology from EKU. In addition, I have two Associate Degrees - Art and Science - from Big Sandy College
-    Community and Technical College. I studied pharmacy abroad for one year in Syria during 2010. I was introduced to web design by my dad's friend back in 2004 when I was 11 years old.
-    He showed me how to create a basic website using Microsoft FrontPage. The first HTML element I used was <code>&lt;marquee&gt;</code>. He also showed me how to host it to Angelfire.
-    I thought that was the coolest thing ever!
-    </div>
-    <div class="about-me-photo"><img class="about-me-photo" src="images/asaad.jpg" alt="another photo of me"></div>
-  </div> <!--End div aboutMeFlexbox -->
-</div> <!--End div aboutme -->
+      <div class="jumbotron">
+        <h1 class="display-3">About Me</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+      </div>
 
-</div> <!-- End div wrapper -->
-<footer>
-<p>&copy; 2017 Developed by <a href="http://www.crispywebsite.com" target="_blank">CrispyWebsite<a></p>
-</footer>
-<!--Javascript and jQuery-->
-<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="js/slick/slick.min.js"></script>
-<script type="text/javascript" src="js/animsition/animsition.min.js"></script>
-<script type="text/javascript" src="js/javascript.js"></script>
-<script type="text/javascript" src="jquery/jquery.js"></script>
+      <div class="grid-full secondary-color">
+        <div class="grid-half">
+          <p >
+            Greetings everyone! On July 2017, I was fortunate to get accepted to CodeLouisville's Front-End Web Development program.
+            In 2015, I recieved my Bachelor of Science degree in Biology from EKU. In addition, I have two Associate Degrees - Art and Science - from Big Sandy College
+            Community and Technical College. I studied pharmacy abroad for one year in Syria during 2010. I was introduced to web design by my dad's friend back in 2004 when I was 11 years old.
+            He showed me how to create a basic website using Microsoft FrontPage. The first HTML element I used was <code>&lt;marquee&gt;</code>. He also showed me how to host it to Angelfire.
+            I thought that was the coolest thing ever!
+          </p>
+        </div>
+        <div class="grid-half">
+          <div class="about-me-photo"><img class="about-me-photo" src="images/asaad.jpg" alt="another photo of me"></div>
+        </div> <!--End div aboutMeFlexbox -->
+      </div> <!--End div aboutme -->
 
-</body>
+      </div> <!-- End div wrapper -->
+    <footer>
+      <p>&copy; 2017 Developed by Asaad Khattab</p>
+    </footer>
+
+    <!--Javascript and jQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- Slick Carousel CDN -->
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <!-- Local JS File -->
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
 </html>
