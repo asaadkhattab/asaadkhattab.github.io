@@ -1,5 +1,5 @@
 /* Main CSS Files */
-/*@import url("../css/normalize.css");*/
+@import url("../css/normalize.css");
 @import url("../css/main.css");
 @import url("../css/responsive.css");
 @import url("../css/colors.css");

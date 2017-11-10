@@ -10,8 +10,8 @@ REGISTER -- SIGN UP
 }
 
 form {
-  padding: 15px;
-  max-width: 400px;
+  padding: 15px 20px;
+  max-width: 450px;
   margin: 10px auto;
   border: transparent;
   background: rgba(3, 169, 244, 0.7);
@@ -19,9 +19,12 @@ form {
   outline: 0;
   color: #000;
   font-size: 16px;
-
 }
 
+input {
+  outline: none;
+
+}
 
 input[type="date"],
 input[type="email"],
@@ -39,8 +42,19 @@ select
   height: 2em;
   font-size: 20px;
   padding: 10px;
-
+  display: block;
 }
+
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+select
+{
+ background: #fff;
+}
+
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -85,6 +99,7 @@ fieldset {
 
 }
 
+/* BUTTON - SUBMIT & RESET*/
 .register-button {
   background-color: #FF8800;
   color: #fff;
@@ -93,4 +108,15 @@ fieldset {
   margin: 5% auto;
   padding: 5%;
   border-radius: 10px;
+}
+
+/* FOR JQUERY VALIDATION */
+.validate {
+  margin: 0 auto;
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  width: 50%;
+  color: #cc0000;
+  border-bottom: 1px dotted #cc0000;
 }

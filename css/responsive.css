@@ -4,6 +4,15 @@
     margin: 0;
   }
 
+  .about-me-text {
+    padding: 2em;
+    font-size: 1.2em;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .text-logo {
+    font-size: 1.7rem;
+  }
   /* This will disable the links on the mobile view */
   .navigation a {
     display: none;
@@ -19,6 +28,11 @@
 
 /* LANDSCAPE DISPLAY FOR MOBILE PHONES */
 @media (min-width: 576px) and (max-width:767px) {
+  .grid-half {
+    width: 100%;
+    float: left;
+  }
+
   .main-header {
     display: flex;
     justify-content: center;
@@ -28,13 +42,10 @@
   .navigation {
     flex-direction: row;
   }
-
-
 }
 
 /* TABLETS */
 @media (min-width: 768px) and (max-width: 991px) {
-
   .main-header {
     position: fixed;
     bottom: 0;
@@ -47,17 +58,17 @@
   }
 
   footer {
-    margin-bottom: 120px;
+    margin-bottom: 119px;
   }
-
 }
 
 /* LARGE DESKTOPS */
 @media (min-width: 992px) {
-  .text-logo {
-    padding: 5px;
-  }
 
+  .grid-half {
+    float: left;
+    width: 50%;
+  }
   .main-header {
     bottom: 0;
     position: fixed;
@@ -65,22 +76,23 @@
     height: 100px;
   }
 
-  .navigation {
-    display: flex;
-    flex-direction: row;
-    padding: 20px 1px;
-    margin-right: 70px;
-    margin-top: 5px;
+  .header-h1 {
+    margin-right: auto;
+    margin-top: 15px;
   }
 
   .text-logo {
-    margin-top: 20px;
-    margin-left: 70px;
-    margin-right: auto;
+    margin-left: 50px;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 1px;
+    margin-right: 50px;
   }
 
   footer {
     margin-bottom: 100px;
   }
-
 }

@@ -11,8 +11,6 @@
       <meta name="keywords" content="asaad, khattab, web, developer, html, javascript, css, bootstrap louisville, kentucky">
       <!-- Mobile Meta -->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- BOOTSTRAP -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
       <!-- CSS -->
       <link rel="stylesheet" href="css/import.css">
       <!-- Favicon -->
@@ -20,16 +18,16 @@
   </head>
 
   <body>
-    <div class="container-fluid wrapper">
+    <div class="wrapper">
       <!--Main Header and Navigation -->
       <header class="main-header">
-        <h1 class="text-logo"><a href="index.html">Asaad Khattab</a></h1>
+        <h1 class="header-h1"><a href="index.html" class="text-logo">Asaad Khattab</a></h1>
         <nav>
           <ul class="navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
+            <li class="clicked"><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
@@ -37,28 +35,50 @@
 
       <div class="jumbotron">
         <h1 class="display-3">About Me</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
         <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </p>
+        <p class="lead">My short bio.</p>
       </div>
 
-      <div class="grid-full secondary-color">
+      <div class="grid-full warning-color">
         <div class="grid-half">
-          <p >
-            Greetings everyone! On July 2017, I was fortunate to get accepted to CodeLouisville's Front-End Web Development program.
-            In 2015, I recieved my Bachelor of Science degree in Biology from EKU. In addition, I have two Associate Degrees - Art and Science - from Big Sandy College
-            Community and Technical College. I studied pharmacy abroad for one year in Syria during 2010. I was introduced to web design by my dad's friend back in 2004 when I was 11 years old.
-            He showed me how to create a basic website using Microsoft FrontPage. The first HTML element I used was <code>&lt;marquee&gt;</code>. He also showed me how to host it to Angelfire.
+          <div class="text-block">
+            <p>
+            Greetings everyone! I'm a front-end web developer and lifelong learner
+            currently enrolled in CodeLouisville. I'm also learning backend web development
+            on TeamTreeHouse.
+            </p>
+            <p>
+            In 2015, I recieved my Bachelor of Science degree in Biology from EKU with an intention
+            to go to Med school. In addition, I have two Associate Degrees - Art and Science - from
+            Big Sandy College Community and Technical College(2013). Before that I studied pharmacy abroad
+            for one year in Syria during 2010.
+            </p>
+            <p>
+            However, in 2016 I did some deep soul searching and decided to become a developer
+            because I was introduced to web development during my childhood years and I’ve always
+            been fascinated by it.
+            </p>
+            <p>
+            Back in 2004 when I was 11 years old, my dad's friend showed me how
+            to make a simple website using Microsoft FrontPage.
+            The first HTML element I wrote was
+            <code>&lt;marquee&gt;</code>.
             I thought that was the coolest thing ever!
-          </p>
+            He also showed me how to host it to Angelfire.
+            I also liked blogging on Wordpress and testing
+            plugins when I was in high school. I believe that if you enjoy doing something
+            not only will time fly but you will stay up late, wake up early, and forget to eat.
+            </p>
+          </div>
         </div>
+
         <div class="grid-half">
-          <div class="about-me-photo"><img class="about-me-photo" src="images/asaad.jpg" alt="another photo of me"></div>
-        </div> <!--End div aboutMeFlexbox -->
-      </div> <!--End div aboutme -->
+          <div class="about-me-photo-container">
+            <img class="about-me-photo" src="images/asaad.jpg" alt="another photo of me">
+          </div>
+        </div>
+      </div>
+
 
       </div> <!-- End div wrapper -->
     <footer>
@@ -71,8 +91,5 @@
     <script type="text/javascript" src="js/slick/slick.min.js"></script>
     <!-- Local JS File -->
     <script type="text/javascript" src="js/javascript.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   </body>
 </html>

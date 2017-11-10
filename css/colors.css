@@ -1,88 +1,69 @@
-/*** Colors for CSS ***/
+/*******************************************************************************
+Colors
+*******************************************************************************/
+footer,
 .navigation a,
-.navigation a:visited {
+.navigation a:visited,
+.navigation a:active,
+h1 .text-logo
+{
   color: #fff;
 }
 
-/* Header */
-
+/* HEADER */
 .main-header {
-  background: #0d47a1;
+  background: #243a51;
 }
 
-/* Navigation */
-
-.navigation a:active {
-  background-color: #fff;
+.jumbotron {
+  background-color: #9bc152;
+  color: #282932;
 }
 
-.navigation a:active {
-  color: #000;
-}
-
-/* SELECTED NAVIGATION LINK */
-
+/* NAVIGATION LINK */
 .text-logo,
 .text-logo a:visited {
   color: #fff;
 }
 
+.navigation a:focus {
+  color: #243a51;
+  background-color: #fff;
+}
+
+.column-one-grid,
 .find-me-online,
 .project-logo {
   background-color: #eee;
 }
 
-.about-me-text {
-  color: #000;
-  background-color: #fff;
-}
-
-/* RESUME*/
-
-.column-one-grid {
-  background-color: #eee;
-}
-
-.column-two-grid {
-  background-color: #fff;
-}
-
+/* Resume */
 .date-grid {
   color: #800000;
 }
 
-/* CONTACT US */
-
-.contact-card {
-  width: 300px;
-  height: 170px;
-  margin: 20px auto;
-  display: block;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  background-color: #eee;
-  transition: 0.3s;
-  padding: 20px 50px;
-  border-radius: 10px;
-  overflow-y: visible;
+.column-two-grid {
+  color: #000;
+  background-color: #fff;
 }
 
-.contact-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.text-block {
+  color: #f6f4ec;
+  background-color: #282932;
 }
+/* PROJECT */
 
 /* FOOTER */
-
 footer {
-  color: #fff;
-  background-color: #000;
+  background-color: #2e2e2e;
 }
 
 /*******************************************************************************
-jQuery Colors
+MDBOOTSTRAP Colors
 *******************************************************************************/
 
 .danger-color {
-	background: #ff4444;
+	background-color: #ff4444;
 }
 
 .default-color {
@@ -94,7 +75,7 @@ jQuery Colors
 }
 
 .secondary-color {
-	background: #aa66cc;
+	background-color: #aa66cc;
 }
 
 .secondary-color-dark {
@@ -106,10 +87,11 @@ jQuery Colors
 }
 
 .warning-color {
-	background: #ffbb33;
+	background-color: #ffbb33;
 }
+
 .warning-color-dark {
-  background-color: #ff8800
+  background-color: #ff8800;
 }
 
 .special-dark-color {

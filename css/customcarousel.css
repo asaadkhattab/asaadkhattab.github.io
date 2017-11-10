@@ -12,8 +12,9 @@ CAROUSEL JQUERY PLUGIN
   width: 150px;
   margin-top: 30px;
   opacity: .5;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   background-color: transparent;
+  transition: .35s;
 }
 
 
@@ -25,8 +26,8 @@ CAROUSEL JQUERY PLUGIN
   background-size: cover;
 }
 
-.carousel-text-container {
-  margin: 20px auto;
+.carousel-display-screen {
+  margin: 20px 3%;
   box-shadow: 5px 5px 5px #888888;
   background: rgba(0, 0, 0, 0.7);
   width: 350px;
@@ -40,21 +41,9 @@ CAROUSEL JQUERY PLUGIN
   padding: 0;
 }
 
-.grid-full {
-  width: 100%;
-  float: left;
-}
-
-.grid-half {
-  width: 100%;
-  text-align: center;
-  float: left;
-}
 
 .slide {
-
 height: 800px;
-
 }
 
 .slide h1 {
@@ -103,12 +92,7 @@ height: 800px;
 
 /* LANDSCAPE DISPLAY FOR MOBILE PHONES */
 @media (min-width: 576px) and (max-width:767px) {
-  .grid-half {
-    width: 10%;
-    float: left;
-  }
-
-  .carousel-text-container {
+  .carousel-display-screen {
     left: 50%;
     top: 25%;
     position: absolute;
@@ -120,47 +104,42 @@ height: 800px;
 
 /* Tablets*/
 @media (min-width: 768px) and (max-width: 991px) {
-
-  .grid-half {
-    width: 90%;
-    float: left;
-  }
-
-  .carousel-text-container {
+  .carousel-display-screen {
     left: 50%;
-    top: 50%;
+    top: 25%;
     position: absolute;
     transform: translate(-50%, -50%);
     width: 500px;
   }
 
   .slide {
-    height: calc(100vh - 130px);
+    height: calc(100vh - 119px);
   }
 
 }
 
 /* Large Destops and Laptops*/
 @media (min-width: 992px) {
-
   .grid-half {
-    width: 80%;
+    width: 100%;
     float: left;
+
   }
 
 
-  .carousel-text-container {
-    position: none;
-    margin: 50px 10% 10% -19%;
-    width: 500px;
+  .carousel-display-screen {
+
+
+
   }
 
-  .carousel-text-container {
-    left: 50%;
-    top: 45%;
+  .carousel-display-screen{
+    left: 29%;
+    top: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     width: 500px;
+
   }
 
   .slide img {
