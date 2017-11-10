@@ -1,3 +1,7 @@
+/*******************************************************************************
+MEDIA QUERIES
+*******************************************************************************/
+
 /* PORTRAIT DISPLAY FOR MOBILE PHONES */
 @media (max-width: 575px) {
   .text-logo {
@@ -17,12 +21,10 @@
   .navigation a {
     display: none;
   }
-}
 
-/* MOBILE OPTION MENU*/
-@media (min-width: 576px) {
-  .navigation select, .navigation button {
-    display:none;
+/* RESUME PAGE */
+  .grid {
+      grid-template-columns: 1fr;
   }
 }
 
@@ -42,6 +44,7 @@
   .navigation {
     flex-direction: row;
   }
+
 }
 
 /* TABLETS */
@@ -95,4 +98,31 @@
   footer {
     margin-bottom: 100px;
   }
+}
+
+
+/*******************************************************************************
+EXTRA MEDIA QUERIES CUSTOMIZATION
+*******************************************************************************/
+
+
+/* MOBILE OPTION DROPDOWN MENU*/
+@media (min-width: 576px) {
+  .navigation select, .navigation button {
+    display:none;
+  }
+}
+
+
+/* MOBILE - PORTRAIT AND LANDSCAPE */
+@media(max-width: 767px) {
+  /* PROJECT PAGE */
+
+    .grid-project {
+      grid-template-columns: 1fr;
+    }
+
+    footer {
+      text-align: center;
+    }
 }

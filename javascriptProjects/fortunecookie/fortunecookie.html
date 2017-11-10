@@ -17,51 +17,8 @@
       <link rel="icon" href="../../fav.ico" type="image/x-icon">
   </head>
     <style>
-    body {
-      background: #384047;
-    }
-
-    .fortune-cookie-h1 {
-      color: #fff;
-    }
-
-    .program {
-      display: block;
-      margin: 200px auto;
-      padding: 40px;
-      text-align: center;
-      width: 80%;
-      background-color: #fff;
-      border-radius: 10px;
-    }
-
-    #fortune-button {
-      display: block;
-      margin: 0 auto;
-      padding: 12px 20px;
-      font-weight: 400;
-      width: 250px;
-      border: 3px solid;
-      font-size: 1em;
-      color: #fff;
-      background-color: #384047;
-    }
-
-    #lottoDisplay {
-      margin: 20px auto;
-      height: 50px;
-      width: 250px;
-      border: 1px solid;
-      border-radius: 1em;
-      font-size: 1.5em;
-      background-color: #fff;
-    }
-
-    #lottoDisplay:after {
-      color: #4b515d;
-    }
+body{background:#384047}.fortune-cookie-h1{color:#fff}.program{display:block;margin:200px auto;padding:40px;text-align:center;width:80%;background-color:#fff;border-radius:10px}#fortune-button{display:block;margin:0 auto;padding:12px 20px;font-weight:400;width:250px;border:3px solid;font-size:1em;color:#fff;background-color:#384047}#lottoDisplay{margin:20px auto;height:50px;width:250px;border:1px solid;border-radius:1em;font-size:1.5em;background-color:#fff}#lottoDisplay:after{color:#4b515d}
     </style>
-
   <body>
     <div class="wrapper">
       <!--Main Header and Navigation -->
@@ -78,6 +35,32 @@
         </nav>
       </header>
 
+      <script>
+        function fortuneCookie(range) {
+          this.range = range;
+          this.breakCookie = function () {
+            var randomNumber = Math.floor(Math.random() * this.range) + 1;
+            return randomNumber;
+          }
+        }
+
+        function lotto(number) {
+          var placeholder = document.getElementById("lottoDisplay");
+          placeholder.innerHTML = number;
+        }
+
+        /* button */
+        var button = document.getElementById("fortune-button");
+        button.onclick = function() {
+          var number = new fortuneCookie(49);
+          var total = " ";
+          for (var i = 0; i < 6; i++) {
+            total += number.breakCookie() + " ";
+          }
+          lotto(total);
+        };
+      </script>
+
       <!-- FORTUNE COOKIE LOTTO NUMBER -->
       <div class="program">
         <h1 class"fortune-cookie-h1">Fortune Cookie Lotto Number</h1>
@@ -91,33 +74,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!-- Local JS File -->
-
-
-    <script>
-      function fortuneCookie(range) {
-        this.range = range;
-        this.breakCookie = function () {
-          var randomNumber = Math.floor(Math.random() * this.range) + 1;
-          return randomNumber;
-        }
-      }
-
-      function lotto(number) {
-        var placeholder = document.getElementById("lottoDisplay");
-        placeholder.innerHTML = number;
-      }
-
-      /* button */
-      var button = document.getElementById("fortune-button");
-      button.onclick = function() {
-        var number = new fortuneCookie(49);
-        var total = " ";
-        for (var i = 0; i < 6; i++) {
-          total += number.breakCookie() + " ";
-        }
-        lotto(total);
-      };
-    </script>
         <script src="../../js/javascript.js"></script>
   </body>
 </html>
