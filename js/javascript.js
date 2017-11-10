@@ -27,9 +27,7 @@ $(".navigation a").each(function(){
 
 
 /*
-
 SLICK CAROUSEL JQUERY PLUGIN
-
 */
 
 $(document).ready(function(){
@@ -42,6 +40,9 @@ $(document).ready(function(){
   });
 });
 
+/*
+SLICK CAROUSEL JQUERY PLUGIN
+*/
 
 function fortuneCookie(range) {
   this.range = range;
@@ -51,21 +52,18 @@ function fortuneCookie(range) {
   }
 }
 
-var counter = 0;
-while ( counter <= 6 ) {
-  var number = new fortuneCookie(49);
-  counter += 1;
-}
-
 function lotto(number) {
   var placeholder = document.getElementById("lottoDisplay");
-  placeholder.innerHTML = number + ' ';
+  placeholder.innerHTML = number;
 }
 
 /* button */
 var button = document.getElementById("fortune-button");
 button.onclick = function() {
-
-  var total = number.breakCookie();
+  var number = new fortuneCookie(49);
+  var total = " ";
+  for (var i = 0; i < 6; i++) {
+    total += number.breakCookie() + "  ";
+  }
   lotto(total);
 };

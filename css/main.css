@@ -287,12 +287,12 @@ ACCORDION CSS FOR PROJECTS
   overflow: hidden;
 }
 
-.accordion-input {
+#tab-one {
 
   opacity: 0;
   z-index: -1;
 }
-.accodion-label {
+#accodionLabel {
   position: relative;
   display: block;
   padding: 0 0 0 1em;
@@ -319,11 +319,11 @@ ACCORDION CSS FOR PROJECTS
 }
 
 /* :checked */
-.accordion-input:checked ~ .tab-content {
+#tab-one:checked ~ .tab-content {
   max-height: 10em;
 }
 
-.accordion-label::after {
+#accordionLabel::after {
   position: absolute;
   right: 0;
   top: 0;
@@ -335,7 +335,7 @@ ACCORDION CSS FOR PROJECTS
 
 }
 
-.accordion-input[type=checkbox] + .accordion-label::after {
+#tab-one[type=checkbox] + #accordionLabel::after {
   content: "+";
 }
 
