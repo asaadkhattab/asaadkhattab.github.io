@@ -17,6 +17,10 @@ MEDIA QUERIES
   .text-logo {
     font-size: 1.7rem;
   }
+
+  .top-navigation {
+    display: none;
+  }
   /* This will disable the links on the mobile view */
   .navigation a {
     display: none;

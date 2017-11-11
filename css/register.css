@@ -7,6 +7,7 @@ REGISTER -- SIGN UP
   font-size: 40px;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 form {
@@ -14,7 +15,7 @@ form {
   max-width: 450px;
   margin: -100px auto 85px auto;
   border: transparent;
-  background: rgba(3, 169, 244, 0.8);
+  background: #0099CC;
   border-radius: 10px;
   color: #000;
   font-size: 16px;
@@ -68,6 +69,8 @@ input[type="checkbox"] {
 
 legend {
   font-size: 1.5em;
+  margin: 0;
+  padding: 0;
   color: #fff;
 }
 
@@ -84,22 +87,25 @@ fieldset {
 
 /* Roman Numeral List */
 .roman {
-  height: 35px;
-  width: 35px;
-  line-height: 35px;
+  position: relative;
+  left: -50px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 37px;
   display: inline-flex;
   justify-content: center;
   text-align: center;
-  margin-right: .5em;
-  font-size: .8em;
+  font-size: .9em;
   color: #fff;
-  background-color: #0d47a1;
+  background-color: #3acec2;
+  border: 2px solid #fff;
 
 }
 
 /* BUTTON - SUBMIT & RESET*/
 .register-button {
-  background-color: #FF8800;
+  background-color: #33b5e5;
   color: #fff;
   width: 100%;
   text-align: center;

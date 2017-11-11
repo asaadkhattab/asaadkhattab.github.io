@@ -76,7 +76,7 @@ HEADER AND NAVIGATION
 }
 
 .clicked a{
-  border: 1.5px solid #fff;
+  border: 1.5px solid #ff8800;
   border-radius: 1em;
 }
 
@@ -97,6 +97,35 @@ HEADER AND NAVIGATION
 .jumbotron-button {
   padding: 1em;
 }
+/*******************************************************************************
+TOP NAVIGATION
+*******************************************************************************/
+
+.top-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 12px;
+  height: 40px;
+  box-shadow: 0 1px 4px rgba(0,0,0,1);
+  z-index: 1000;
+}
+
+
+.top-navigation-phone {
+  flex-grow: 2;
+  margin-left: 20px;
+}
+
+.top-navigation-register {
+  margin-right: 20px;
+}
+
+.top-navigation-email {
+  margin-left: 20px;
+}
+
 /*******************************************************************************
 TRANSFORM AND TRANSITIONS
 *******************************************************************************/

@@ -5,11 +5,18 @@ body {
   background-color:#ff8800;
 }
 
+a:visited {
+  color: #fff;
+}
+
+a:link {
+  color: #fff;
+}
+
 footer,
 .navigation a,
 .navigation a:visited,
-.navigation a:active,
-h1 .text-logo
+.navigation a:active
 {
   color: #fff;
 }
@@ -30,6 +37,7 @@ h1 .text-logo
   color: #fff;
 }
 
+
 .navigation a:focus {
   color: #243a51;
   background-color: #fff;
@@ -39,6 +47,12 @@ h1 .text-logo
 .find-me-online,
 .project-logo {
   background-color: #eee;
+}
+
+/*Top navigation*/
+.top-navigation {
+  color: #e1e1e1;
+  background-color: #59698d;
 }
 
 /* Resume */

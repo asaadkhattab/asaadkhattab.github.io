@@ -7,16 +7,18 @@ CAROUSEL JQUERY PLUGIN
 .carousel-button {
   padding: 12px 20px;
   color: #fff;
-  transition: .35s;
-  font-weight: 400;
+  font-weight: 700;
   width: 150px;
   margin-top: 30px;
-  opacity: .5;
-  border: 2px solid #fff;
-  background-color: transparent;
-  transition: .35s;
+  background-color: #ff8800;
+  cursor: crosshair;
+  transition: .5s;
 }
 
+.carousel-button:hover {
+  color: #ff8800;
+  background-color: #fff;
+}
 
 .front-cover {
   background: url('../images/front-cover.jpg');
@@ -41,9 +43,11 @@ CAROUSEL JQUERY PLUGIN
   padding: 0;
 }
 
-
+.grid-full {
+  z-index: 999;
+}
 .slide {
-height: 800px;
+  height: 800px;
 }
 
 .slide h1 {
@@ -56,7 +60,7 @@ height: 800px;
   color: #fff;
 }
 
-.slide .button {
+.slide {
   color: #000;
   border-color: #fff;
   opacity: .6;
@@ -113,7 +117,7 @@ height: 800px;
   }
 
   .slide {
-    height: calc(100vh - 119px);
+    height: calc(100vh - 159px);
   }
 
 }
@@ -123,14 +127,6 @@ height: 800px;
   .grid-half {
     width: 100%;
     float: left;
-
-  }
-
-
-  .carousel-display-screen {
-
-
-
   }
 
   .carousel-display-screen{
@@ -139,7 +135,6 @@ height: 800px;
     position: absolute;
     transform: translate(-50%, -50%);
     width: 500px;
-
   }
 
   .slide img {
@@ -149,7 +144,7 @@ height: 800px;
   }
 
   .slide {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 140px);
   }
 
 }
