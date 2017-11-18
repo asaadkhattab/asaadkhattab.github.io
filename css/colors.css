@@ -69,7 +69,18 @@ footer,
   color: #f6f4ec;
   background-color: #282932;
 }
-/* PROJECT */
+
+/*******************************************************************************
+PROJECTS
+*******************************************************************************/
+
+.project-socialmedia {
+  background-color: #eee;
+}
+
+.flex-socialmedia {
+  background-color: #6ab47b;
+}
 
 /* FOOTER */
 footer {
