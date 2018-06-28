@@ -39,31 +39,3 @@ $(document).ready(function(){
     dots: true,
   });
 });
-
-/*
-SLICK CAROUSEL JQUERY PLUGIN
-*/
-
-function fortuneCookie(range) {
-  this.range = range;
-  this.breakCookie = function () {
-    var randomNumber = Math.floor(Math.random() * this.range) + 1;
-    return randomNumber;
-  }
-}
-
-function lotto(number) {
-  var placeholder = document.getElementById("lottoDisplay");
-  placeholder.innerHTML = number;
-}
-
-/* button */
-var button = document.getElementById("fortune-button");
-button.onclick = function() {
-  var number = new fortuneCookie(49);
-  var total = " ";
-  for (var i = 0; i < 6; i++) {
-    total += number.breakCookie() + "  ";
-  }
-  lotto(total);
-};

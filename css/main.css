@@ -167,6 +167,7 @@ PROJECTS
 /* Grid Project */
 .grid-project {
   display: grid;
+ 
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 5px;
   background-color: #fff;

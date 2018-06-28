@@ -13,6 +13,7 @@ CAROUSEL JQUERY PLUGIN
   background-color: #ff8800;
   cursor: crosshair;
   transition: .5s;
+  border: 0;
 }
 
 .carousel-button:hover {
